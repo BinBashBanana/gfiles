@@ -1,0 +1,12 @@
+body{
+    background-color: #000205;
+    background-image: url("skulls.png");
+}
+
+#game {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+}

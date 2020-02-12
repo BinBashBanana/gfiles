@@ -1,0 +1,202 @@
+/* Google Web Fonts */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/PressStart2Play.eot');
+  src: url('fonts/PressStart2Play86d7.eot?iefix') format('eot'),
+       url('fonts/PressStart2Play.woff') format('woff'),
+       url('fonts/PressStart2Play.ttf') format('truetype');
+}
+
+/* ---------------- */
+
+body {
+	background-color: #000;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Links */
+.main a, .main a:link, .main a:active, .main a:visited {
+    padding: 5px;
+	background: #c80a0a;
+    color: rgb(255, 255, 255);
+}
+* { box-shadow: none !important; }
+
+.content, h1, h2, h3, p, div { 
+	font-family: 'Press Start 2P', cursive; 
+	font-weight: normal;
+	}
+.content[id*=-content]:not(#game-content) {	
+	display: none; 
+	overflow-y: auto; 
+	overflow-x: hidden;
+}
+.content img {
+	max-width: 100%;
+}
+.pull-right {
+	float: right;
+}
+.button {
+	background: #c80a0a; 
+	cursor: pointer;
+	padding: 8px;
+	}
+#menu-buttons .button { background: rgba(0,0,0,0.4); }
+#menu-buttons .button:hover, .button:hover {	background: rgba(255,255,255,0.2); }
+.button#back {
+	position: relative;
+	top: -25px;
+	display: inline-block;
+}
+.button#score-submit {
+	vertical-align: middle;
+}
+
+#highscore-form { margin-top: 8px; }
+input[type="text"]:hover, input[type="text"]:focus, input[type="password"]:hover, input[type="password"]:focus, textarea:hover, textarea:focus {
+    border: 1px #c80a0a solid;
+}
+#highscore-list {}
+#score { float: right; }
+
+#myCanvas { border: none; display: block; background: rgb(0,0,0); width: 100%;  height: auto;}
+#canvas-container { position: relative;}
+#canvas-overlay-container {
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+	height: 100%; 
+	width: 540px;
+	max-width: 100%;
+}
+#canvas-overlay-content { 
+	position: absolute; 
+	top: 33%; 	
+	left: 0; 
+	margin-top: 0;
+	max-width: 100%; 
+	text-align: center;
+	width: 540px;
+	max-width: 100%;
+	}
+#canvas-overlay-content #title {
+	text-transform: uppercase;
+	font-size: 150%;
+}
+
+.canvas { position:absolute; padding-top: 20px;}
+.main {width: 100%; max-width: 660px; margin: 10px auto; position: static; left: auto;}
+.content { width: 100%; max-width: 540px; text-align: left; margin: 0;}
+.container {text-align: center; margin:0; padding: 0;}
+.wrapper { padding:0;}
+.game  { max-width: 540px; margin: auto; }
+
+.about { font-size: 10px; margin-top: 20px; text-align: center; display: none;}
+
+
+body, html { font-size: 15px; }
+
+div.audio {}
+audio {display: block; }
+
+.score { width: 180px; }
+.score, .lives, .level { display: inline-block; }
+
+/* ---------- Controls ------------------------*/
+
+.controls { text-align: center; margin-top: 15px;}
+.controls-section { 
+	height: auto; 
+	width: 47%; 
+	display: inline-block; 
+	margin: 0;
+	text-align: left;
+	}
+.controls-left { }
+.controls-right .controlButton { position: relative; right: -65%; }
+
+/* Arrow Keys - only displayed when game isn't paused */
+#game-buttons { display: none; }
+
+/* Game Menu - displayed when game is paused */
+#menu-buttons ul, .controls#menu-buttons ul li{ list-style: none; padding: 0;}
+#menu-buttons ul li { 
+	height: 40px;
+	line-height: 40px;
+	font-size: 120%;
+	}
+
+.controlSound { 
+	background: url('img/audio-icon.png');
+	width: 73px;
+	height: 50px;
+	position: relative;
+	bottom: 5px;
+	background-size: 100%;
+	height: 25px;
+	width: 36px;
+	float: right;
+	}
+	
+#mute { 
+	display: none; 
+	width: 36px; 
+	height: 25px;
+	}
+
+.controlButton {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin: 5px;
+	background: none repeat scroll 0% 0% #C80A0A;
+	line-height: 70px;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 60px;
+	cursor: pointer;
+}
+.controlButton:hover, .controlButton:active {
+	background: #c00202;
+}
+
+.description { display: none; }
+
+@media screen and (max-width: 1050px) {
+	html, body { background: rgb(0,0,0);}
+}
+@media screen and (max-width: 650px) {
+	.game { width: 93%;}
+	.content { max-width: none; }
+	#menu-buttons .button { background: rgba(255,255,255,0.1); }
+	.button:hover { background: rgba(255,255,255,0.3); }
+	.button#back { top: 0; }
+}
+
+@media screen and (max-width: 400px) {
+	
+	.nomobile {display: none; }
+	.mobile {display: block; }
+	
+	html, body { 
+		overflow-x: hidden; 
+		height: 100%;
+		}
+	
+	.main { margin: 10px auto; }
+	.content { min-height: 0; }
+	
+	.controlButton {
+		width: 60px;
+		height: 60px;
+		line-height: 40px;
+		font-size: 40px;
+	}
+	.controls-right .controlButton { right: -55%; }
+	/*canvas#myCanvas { margin: 5px auto; }	*/
+
+}
