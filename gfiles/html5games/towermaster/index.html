@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Mirrored from www.phoenix-le.cf/gfiles/html5games/towermaster/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2020 01:05:22 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -28,7 +26,7 @@
             text-align: center;
             width: 100%;
             height: 100%;
-            background: #F95240 url(assets/main-bg.png)
+            background: #F95240 url(./assets/main-bg.png)
         }
 
         @media screen and (min-height: 560px) {
@@ -350,11 +348,11 @@
 
         @font-face {
             font-family: 'wenxue';
-            src: url('assets/wenxue.eot');
-            src: url('assets/wenxue.eot'),
-            url('assets/wenxue.woff'),
-            url('assets/wenxue.ttf'),
-            url('assets/wenxue.svg');
+            src: url('./assets/wenxue.eot');
+            src: url('./assets/wenxue.eot'),
+            url('./assets/wenxue.woff'),
+            url('./assets/wenxue.ttf'),
+            url('./assets/wenxue.svg');
         }
 
         .font-wenxue {
@@ -367,7 +365,7 @@
 <div class="content">
     <div class="loading">
         <div class="main"><img
-                src="assets/main-loading.gif">
+                src="./assets/main-loading.gif">
             <div class="progress">
                 <div class="title font-wenxue">0%</div>
                 <div class="bar">
@@ -383,11 +381,11 @@
     <div class="landing hide">
         <div class="action-1">
             <img
-                    src="assets/main-index-title.png"
+                    src="./assets/main-index-title.png"
                     class="title swing">
         </div>
         <div class="action-2"><img id="start"
-                                   src="assets/main-index-start.png"
+                                   src="./assets/main-index-start.png"
                                    class="start"></div>
     </div>
     <div id="modal" class="modal hide">
@@ -395,19 +393,19 @@
         <div class="js-modal-content modal-content">
             <div class="main">
                 <div class="container"><img
-                        src="assets/main-modal-bg.png"
+                        src="./assets/main-modal-bg.png"
                         class="bg">
                     <div class="modal-main">
                         <div id="over-modal" class="hide js-modal-card"><img
-                                src="assets/main-modal-over.png"
+                                src="./assets/main-modal-over.png"
                                 class="over-img">
                             <div id="score" class="over-score font-wenxue"></div>
                             <div id="over-zero" class="hide">
                                 <div class="tip"><p>再来一次吧！</p>
                                     <img
-                                            src="assets/main-modal-again-b.png"
+                                            src="./assets/main-modal-again-b.png"
                                             class="over-button-b js-reload"><img
-                                            src="assets/main-modal-invite-b.png"
+                                            src="./assets/main-modal-invite-b.png"
                                             class="over-button-b js-invite"></div>
                             </div>
                         </div>
@@ -417,11 +415,11 @@
         </div>
     </div>
     <div class="wxShare hide">
-        <img src="assets/main-share-icon.png">
+        <img src="./assets/main-share-icon.png">
     </div>
 </div>
-<script src="dist/main.js"></script>
-<script src="assets/zepto-1.1.6.min.js"></script>
+<script src="./dist/main.js"></script>
+<script src="./assets/zepto-1.1.6.min.js"></script>
 <script>
   var domReady, loadFinish, canvasReady, loadError, gameStart, game, score, successCount
   // init window height and width
@@ -556,7 +554,7 @@
     a.async = 1;
     a.src = g;
     m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-46444752-20', 'auto');
   ga('send', 'pageview');
@@ -564,12 +562,10 @@
   var _hmt = _hmt || [];
   (function () {
     var hm = document.createElement("script");
-    hm.src = "../../../../hm.baidu.com/hm42e5.js?c1b044f909411ac4213045f0478e96fc";
+    hm.src = "https://hm.baidu.com/hm.js?c1b044f909411ac4213045f0478e96fc";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
 </script>
 </body>
-
-<!-- Mirrored from www.phoenix-le.cf/gfiles/html5games/towermaster/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2020 01:05:26 GMT -->
 </html>
