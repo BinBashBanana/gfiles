@@ -1,7 +1,5 @@
-# Flash games web page
+# Games pages
 
-Basically forked from [This](https://github.com/titaniumnetwork-dev/gfiles).
-And it goes with [This](https://github.com/BinBashBanana/gstore).
-Which was forked from [This](https://github.com/LQ16/gstore).
+Gets files from cdn at [this](https://github.com/BinBashBanana/gstore) repository.
 
-Recompiled using python script.
+Compiled using the python script included.
