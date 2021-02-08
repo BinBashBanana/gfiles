@@ -1,0 +1,4 @@
+class Keyboard{constructor(display,scores,shortcuts){this.display=display;this.scores=scores;this.shortcuts=shortcuts;document.addEventListener("keydown",e=>this.pressKey(e));}
+pressKey(event){let key=event.keyCode;if(this.scores.isFocused()){if(key===13){this.shortcuts.saveHighScore();}}else{if(!this.display.isPlaying()){event.preventDefault();}
+if([89,49,97].indexOf(key)>-1){key="Y";}else if([69,50,98].indexOf(key)>-1){key="E";}else if([82,51,99].indexOf(key)>-1){key="R";}else if([85,52,100].indexOf(key)>-1){key="U";}else if([8,66,78].indexOf(key)>-1){key="B";}else if([13,32,79].indexOf(key)>-1){key="O";}else if([80,67].indexOf(key)>-1){key="P";}else if([38,87].indexOf(key)>-1){key="W";}else if([37,65].indexOf(key)>-1){key="A";}else if([40,83].indexOf(key)>-1){key="S";}else if([39,68].indexOf(key)>-1){key="D";}else{key=String.fromCharCode(key);}
+if(this.shortcuts[this.display.get()][key]){this.shortcuts[this.display.get()][key]();}}}}

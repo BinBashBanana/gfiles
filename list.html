@@ -7,185 +7,189 @@
 <body class="fbody">
 <div class="container">
 <div class="box">
-<input type="text" id="gsearchbar" onkeyup="gsearch()" autocomplete="off" placeholder="Search" />
+<input type="text" id="gsearchbar" onkeyup="var a=document.querySelectorAll('#glist a[href]');for(var i=0;i<a.length;i++)a[i].style.display=a[i].textContent.toUpperCase().indexOf(this.value.toUpperCase())!=-1?'block':'none'" autocomplete="off" spellcheck="false" placeholder="Search" />
 <div id="glist">
 <h2>HTML5 Games</h2>
-<a class="glink" href="./gfiles/html5games/2048">2048</a>
-<a class="glink" href="./gfiles/html5games/asteroids">Asteroids</a>
-<a class="glink" href="./gfiles/html5games/astray">Astray</a>
-<a class="glink" href="./gfiles/html5games/backcountry">Backcountry</a>
-<a class="glink" href="./gfiles/html5games/bounceback">Bounceback</a>
-<a class="glink" href="./gfiles/html5games/breaklock">Breaklock</a>
-<a class="glink" href="./gfiles/html5games/breakout">Breakout</a>
-<a class="glink" href="./gfiles/html5games/chess">Chess</a>
-<a class="glink" href="./gfiles/html5games/chromaincident">Chromaincident</a>
-<a class="glink" href="./gfiles/html5games/connect3">Connect3</a>
-<a class="glink" href="./gfiles/html5games/cookieclicker">Cookieclicker</a>
-<a class="glink" href="./gfiles/html5games/evilglitch">Evilglitch</a>
-<a class="glink" href="./gfiles/html5games/factoryballsforever">Factoryballsforever</a>
-<a class="glink" href="./gfiles/html5games/flappybird">Flappybird</a>
-<a class="glink" href="./gfiles/html5games/geometrydash">Geometrydash</a>
-<a class="glink" href="./gfiles/html5games/hextris">Hextris</a>
-<a class="glink" href="./gfiles/html5games/konnekt">Konnekt</a>
-<a class="glink" href="./gfiles/html5games/krunker">Krunker</a>
-<a class="glink" href="./gfiles/html5games/linuxvm">Linuxvm</a>
-<a class="glink" href="./gfiles/html5games/pushback">Pushback</a>
-<a class="glink" href="./gfiles/html5games/racer">Racer</a>
-<a class="glink" href="./gfiles/html5games/radiusraid">Radiusraid</a>
-<a class="glink" href="./gfiles/html5games/retrohaunt">Retrohaunt</a>
-<a class="glink" href="./gfiles/html5games/roadblocks">Roadblocks</a>
-<a class="glink" href="./gfiles/html5games/run3">Run3</a>
-<a class="glink" href="./gfiles/html5games/sleepingbeauty">Sleepingbeauty</a>
-<a class="glink" href="./gfiles/html5games/snake">Snake</a>
-<a class="glink" href="./gfiles/html5games/spacecompany">Spacecompany</a>
-<a class="glink" href="./gfiles/html5games/tetris">Tetris</a>
-<a class="glink" href="./gfiles/html5games/towermaster">Towermaster</a>
-<a class="glink" href="./gfiles/html5games/underrun">Underrun</a>
-<a class="glink" href="./gfiles/html5games/xx142-b2exe">Xx142-b2exe</a>
+<a href="./gfiles/html5/2048">2048</a>
+<a href="./gfiles/html5/asteroids">Asteroids</a>
+<a href="./gfiles/html5/astray">Astray</a>
+<a href="./gfiles/html5/backcountry">Backcountry</a>
+<a href="./gfiles/html5/bounceback">Bounceback</a>
+<a href="./gfiles/html5/breaklock">Breaklock</a>
+<a href="./gfiles/html5/breakout">Breakout</a>
+<a href="./gfiles/html5/chess">Chess</a>
+<a href="./gfiles/html5/chromaincident">Chromaincident</a>
+<a href="./gfiles/html5/connect3">Connect3</a>
+<a href="./gfiles/html5/cookieclicker">Cookieclicker</a>
+<a href="./gfiles/html5/evilglitch">Evilglitch</a>
+<a href="./gfiles/html5/factoryballsforever">Factoryballsforever</a>
+<a href="./gfiles/html5/flappybird">Flappybird</a>
+<a href="./gfiles/html5/geometrydash">Geometrydash</a>
+<a href="./gfiles/html5/hextris">Hextris</a>
+<a href="./gfiles/html5/konnekt">Konnekt</a>
+<a href="./gfiles/html5/krunker">Krunker</a>
+<a href="./gfiles/html5/linuxvm">Linuxvm</a>
+<a href="./gfiles/html5/pushback">Pushback</a>
+<a href="./gfiles/html5/racer">Racer</a>
+<a href="./gfiles/html5/radiusraid">Radiusraid</a>
+<a href="./gfiles/html5/retrohaunt">Retrohaunt</a>
+<a href="./gfiles/html5/roadblocks">Roadblocks</a>
+<a href="./gfiles/html5/run3">Run3</a>
+<a href="./gfiles/html5/sleepingbeauty">Sleepingbeauty</a>
+<a href="./gfiles/html5/snake">Snake</a>
+<a href="./gfiles/html5/spacecompany">Spacecompany</a>
+<a href="./gfiles/html5/tetris">Tetris</a>
+<a href="./gfiles/html5/towermaster">Towermaster</a>
+<a href="./gfiles/html5/underrun">Underrun</a>
+<a href="./gfiles/html5/xx142-b2exe">Xx142-b2exe</a>
 <h2>Gameboy Advance</h2>
-<a class="glink" href="./gfiles/gba/">Upload ROM</a>
-<h2>Nintendo</h2>
-<a class="glink" href="./gfiles/nes/">Upload ROM</a>
+<a href="./gfiles/rarch/?core=vba_next">Upload ROM</a>
+<h2>Genesis / Master System</h2>
+<a href="./gfiles/rarch/?core=genesis_plus_gx">Upload ROM</a>
+<h2>Nintendo 64</h2>
+<a href="./gfiles/rarch/?core=mupen64plus_next">Upload ROM</a>
+<h2>NES</h2>
+<a href="./gfiles/rarch/?core=nestopia">Upload ROM</a>
 <h2>Super Nintendo</h2>
-<a class="glink" href="./gfiles/snes/">Upload ROM</a>
+<a href="./gfiles/rarch/?core=snes9x">Upload ROM</a>
 <h2>Flash Games</h2>
-<a class="glink" href="./gfiles/f.html#1on1soccer">1on1soccer</a>
-<a class="glink" href="./gfiles/f.html#3dtanks">3dtanks</a>
-<a class="glink" href="./gfiles/f.html#abobosbigadventure">Abobosbigadventure</a>
-<a class="glink" href="./gfiles/f.html#achievementunlocked">Achievementunlocked</a>
-<a class="glink" href="./gfiles/f.html#achievementunlocked2">Achievementunlocked2</a>
-<a class="glink" href="./gfiles/f.html#achievementunlocked3">Achievementunlocked3</a>
-<a class="glink" href="./gfiles/f.html#actionturnip">Actionturnip</a>
-<a class="glink" href="./gfiles/f.html#adaran">Adaran</a>
-<a class="glink" href="./gfiles/f.html#adrenaline">Adrenaline</a>
-<a class="glink" href="./gfiles/f.html#americanracing1">Americanracing1</a>
-<a class="glink" href="./gfiles/f.html#americanracing2">Americanracing2</a>
-<a class="glink" href="./gfiles/f.html#arkandianrevenant">Arkandianrevenant</a>
-<a class="glink" href="./gfiles/f.html#awesomecars">Awesomecars</a>
-<a class="glink" href="./gfiles/f.html#awesomeplanes">Awesomeplanes</a>
-<a class="glink" href="./gfiles/f.html#bloonsplayerpack2">Bloonsplayerpack2</a>
-<a class="glink" href="./gfiles/f.html#bloonsplayerpack3">Bloonsplayerpack3</a>
-<a class="glink" href="./gfiles/f.html#bloonsplayerpack4">Bloonsplayerpack4</a>
-<a class="glink" href="./gfiles/f.html#bloonsplayerpack5">Bloonsplayerpack5</a>
-<a class="glink" href="./gfiles/f.html#bloonstd1">Bloonstd1</a>
-<a class="glink" href="./gfiles/f.html#bloonstd3">Bloonstd3</a>
-<a class="glink" href="./gfiles/f.html#bloonstd4">Bloonstd4</a>
-<a class="glink" href="./gfiles/f.html#bloonstd5">Bloonstd5</a>
-<a class="glink" href="./gfiles/f.html#bobtherobber">Bobtherobber</a>
-<a class="glink" href="./gfiles/f.html#boombot2">Boombot2</a>
-<a class="glink" href="./gfiles/f.html#boxhead2play">Boxhead2play</a>
-<a class="glink" href="./gfiles/f.html#bubbletanks2">Bubbletanks2</a>
-<a class="glink" href="./gfiles/f.html#bulletbill">Bulletbill</a>
-<a class="glink" href="./gfiles/f.html#cactusmccoy">Cactusmccoy</a>
-<a class="glink" href="./gfiles/f.html#cactusmccoy2">Cactusmccoy2</a>
-<a class="glink" href="./gfiles/f.html#cargobridge">Cargobridge</a>
-<a class="glink" href="./gfiles/f.html#causality">Causality</a>
-<a class="glink" href="./gfiles/f.html#computerbashing">Computerbashing</a>
-<a class="glink" href="./gfiles/f.html#crushthecastle">Crushthecastle</a>
-<a class="glink" href="./gfiles/f.html#cubefield">Cubefield</a>
-<a class="glink" href="./gfiles/f.html#cyclomaniacs2">Cyclomaniacs2</a>
-<a class="glink" href="./gfiles/f.html#diggy">Diggy</a>
-<a class="glink" href="./gfiles/f.html#donkeykong">Donkeykong</a>
-<a class="glink" href="./gfiles/f.html#dontshootthepuppy">Dontshootthepuppy</a>
-<a class="glink" href="./gfiles/f.html#doodledefender">Doodledefender</a>
-<a class="glink" href="./gfiles/f.html#doom">Doom</a>
-<a class="glink" href="./gfiles/f.html#ducklife">Ducklife</a>
-<a class="glink" href="./gfiles/f.html#ducklife2">Ducklife2</a>
-<a class="glink" href="./gfiles/f.html#ducklife3">Ducklife3</a>
-<a class="glink" href="./gfiles/f.html#ducklife4">Ducklife4</a>
-<a class="glink" href="./gfiles/f.html#earntodiesuperwheel">Earntodiesuperwheel</a>
-<a class="glink" href="./gfiles/f.html#electricman2">Electricman2</a>
-<a class="glink" href="./gfiles/f.html#elephantquest">Elephantquest</a>
-<a class="glink" href="./gfiles/f.html#epicbattlefantasy3">Epicbattlefantasy3</a>
-<a class="glink" href="./gfiles/f.html#epiccomboredux">Epiccomboredux</a>
-<a class="glink" href="./gfiles/f.html#exitpath">Exitpath</a>
-<a class="glink" href="./gfiles/f.html#factoryballs">Factoryballs</a>
-<a class="glink" href="./gfiles/f.html#factoryballs2">Factoryballs2</a>
-<a class="glink" href="./gfiles/f.html#factoryballs3">Factoryballs3</a>
-<a class="glink" href="./gfiles/f.html#factoryballs4">Factoryballs4</a>
-<a class="glink" href="./gfiles/f.html#flashflightsimulator">Flashflightsimulator</a>
-<a class="glink" href="./gfiles/f.html#flight">Flight</a>
-<a class="glink" href="./gfiles/f.html#happywheels">Happywheels</a>
-<a class="glink" href="./gfiles/f.html#hobo">Hobo</a>
-<a class="glink" href="./gfiles/f.html#hobo2">Hobo2</a>
-<a class="glink" href="./gfiles/f.html#hobo3">Hobo3</a>
-<a class="glink" href="./gfiles/f.html#hobo4">Hobo4</a>
-<a class="glink" href="./gfiles/f.html#hobo5">Hobo5</a>
-<a class="glink" href="./gfiles/f.html#hobo6">Hobo6</a>
-<a class="glink" href="./gfiles/f.html#hobo7">Hobo7</a>
-<a class="glink" href="./gfiles/f.html#interactivebuddy">Interactivebuddy</a>
-<a class="glink" href="./gfiles/f.html#jacksmith">Jacksmith</a>
-<a class="glink" href="./gfiles/f.html#jellytruck">Jellytruck</a>
-<a class="glink" href="./gfiles/f.html#johnnyupgrade">Johnnyupgrade</a>
-<a class="glink" href="./gfiles/f.html#jumpix2">Jumpix2</a>
-<a class="glink" href="./gfiles/f.html#learn2fly">Learn2fly</a>
-<a class="glink" href="./gfiles/f.html#magnetface">Magnetface</a>
-<a class="glink" href="./gfiles/f.html#marioracingtournament">Marioracingtournament</a>
-<a class="glink" href="./gfiles/f.html#megamanprojectx">Megamanprojectx</a>
-<a class="glink" href="./gfiles/f.html#metroidelements">Metroidelements</a>
-<a class="glink" href="./gfiles/f.html#mineblocks">Mineblocks</a>
-<a class="glink" href="./gfiles/f.html#minesweeper">Minesweeper</a>
-<a class="glink" href="./gfiles/f.html#mirrorsedge">Mirrorsedge</a>
-<a class="glink" href="./gfiles/f.html#motherload">Motherload</a>
-<a class="glink" href="./gfiles/f.html#multitask">Multitask</a>
-<a class="glink" href="./gfiles/f.html#mutilateadoll2">Mutilateadoll2</a>
-<a class="glink" href="./gfiles/f.html#myangel">Myangel</a>
-<a class="glink" href="./gfiles/f.html#nanotube">Nanotube</a>
-<a class="glink" href="./gfiles/f.html#ngame">Ngame</a>
-<a class="glink" href="./gfiles/f.html#nucleus">Nucleus</a>
-<a class="glink" href="./gfiles/f.html#nyancatlostinspace">Nyancatlostinspace</a>
-<a class="glink" href="./gfiles/f.html#onemanarmy2">Onemanarmy2</a>
-<a class="glink" href="./gfiles/f.html#pacman">Pacman</a>
-<a class="glink" href="./gfiles/f.html#pandemic">Pandemic</a>
-<a class="glink" href="./gfiles/f.html#pandemic2">Pandemic2</a>
-<a class="glink" href="./gfiles/f.html#papalouie">Papalouie</a>
-<a class="glink" href="./gfiles/f.html#papalouie2">Papalouie2</a>
-<a class="glink" href="./gfiles/f.html#papalouie3">Papalouie3</a>
-<a class="glink" href="./gfiles/f.html#portal">Portal</a>
-<a class="glink" href="./gfiles/f.html#portal2d">Portal2d</a>
-<a class="glink" href="./gfiles/f.html#qwop">Qwop</a>
-<a class="glink" href="./gfiles/f.html#raftwars">Raftwars</a>
-<a class="glink" href="./gfiles/f.html#raftwars2">Raftwars2</a>
-<a class="glink" href="./gfiles/f.html#raze">Raze</a>
-<a class="glink" href="./gfiles/f.html#redshift">Redshift</a>
-<a class="glink" href="./gfiles/f.html#revenant2">Revenant2</a>
-<a class="glink" href="./gfiles/f.html#run2">Run2</a>
-<a class="glink" href="./gfiles/f.html#run3">Run3</a>
-<a class="glink" href="./gfiles/f.html#saszombieassault3">Saszombieassault3</a>
-<a class="glink" href="./gfiles/f.html#shoppingcarthero3">Shoppingcarthero3</a>
-<a class="glink" href="./gfiles/f.html#siftheads">Siftheads</a>
-<a class="glink" href="./gfiles/f.html#siftheads2">Siftheads2</a>
-<a class="glink" href="./gfiles/f.html#siftheads3">Siftheads3</a>
-<a class="glink" href="./gfiles/f.html#siftheads4">Siftheads4</a>
-<a class="glink" href="./gfiles/f.html#siftheads5">Siftheads5</a>
-<a class="glink" href="./gfiles/f.html#sniperassassin4">Sniperassassin4</a>
-<a class="glink" href="./gfiles/f.html#sportsheadsfootball">Sportsheadsfootball</a>
-<a class="glink" href="./gfiles/f.html#stickrpg">Stickrpg</a>
-<a class="glink" href="./gfiles/f.html#stickrun2">Stickrun2</a>
-<a class="glink" href="./gfiles/f.html#stickwar">Stickwar</a>
-<a class="glink" href="./gfiles/f.html#strikeforceheroes2">Strikeforceheroes2</a>
-<a class="glink" href="./gfiles/f.html#strikeforcekittylaststand">Strikeforcekittylaststand</a>
-<a class="glink" href="./gfiles/f.html#sugarsugar">Sugarsugar</a>
-<a class="glink" href="./gfiles/f.html#sugarsugar2">Sugarsugar2</a>
-<a class="glink" href="./gfiles/f.html#sugarsugar3">Sugarsugar3</a>
-<a class="glink" href="./gfiles/f.html#superd">Superd</a>
-<a class="glink" href="./gfiles/f.html#superfighters">Superfighters</a>
-<a class="glink" href="./gfiles/f.html#supermario63">Supermario63</a>
-<a class="glink" href="./gfiles/f.html#supermarioflash">Supermarioflash</a>
-<a class="glink" href="./gfiles/f.html#swordsandsandals2">Swordsandsandals2</a>
-<a class="glink" href="./gfiles/f.html#tacticalassassin">Tacticalassassin</a>
-<a class="glink" href="./gfiles/f.html#tanks">Tanks</a>
-<a class="glink" href="./gfiles/f.html#tanktrouble">Tanktrouble</a>
-<a class="glink" href="./gfiles/f.html#tetris">Tetris</a>
-<a class="glink" href="./gfiles/f.html#thebindingofisaac">Thebindingofisaac</a>
-<a class="glink" href="./gfiles/f.html#theimpossiblequiz2">Theimpossiblequiz2</a>
-<a class="glink" href="./gfiles/f.html#theworldshardestgame2">Theworldshardestgame2</a>
-<a class="glink" href="./gfiles/f.html#thingthingarena">Thingthingarena</a>
-<a class="glink" href="./gfiles/f.html#tosstheturtle">Tosstheturtle</a>
-<a class="glink" href="./gfiles/f.html#ultimateflashsonic">Ultimateflashsonic</a>
+<a href="./gfiles/flash/">Upload SWF</a>
+<a href="./gfiles/flash/?swf=1on1soccer.swf">1on1soccer</a>
+<a href="./gfiles/flash/?swf=3dtanks.swf">3dtanks</a>
+<a href="./gfiles/flash/?swf=abobosbigadventure.swf">Abobosbigadventure</a>
+<a href="./gfiles/flash/?swf=achievementunlocked.swf">Achievementunlocked</a>
+<a href="./gfiles/flash/?swf=achievementunlocked2.swf">Achievementunlocked2</a>
+<a href="./gfiles/flash/?swf=achievementunlocked3.swf">Achievementunlocked3</a>
+<a href="./gfiles/flash/?swf=actionturnip.swf">Actionturnip</a>
+<a href="./gfiles/flash/?swf=adaran.swf">Adaran</a>
+<a href="./gfiles/flash/?swf=adrenaline.swf">Adrenaline</a>
+<a href="./gfiles/flash/?swf=americanracing1.swf">Americanracing1</a>
+<a href="./gfiles/flash/?swf=americanracing2.swf">Americanracing2</a>
+<a href="./gfiles/flash/?swf=arkandianrevenant.swf">Arkandianrevenant</a>
+<a href="./gfiles/flash/?swf=awesomecars.swf">Awesomecars</a>
+<a href="./gfiles/flash/?swf=awesomeplanes.swf">Awesomeplanes</a>
+<a href="./gfiles/flash/?swf=bloonsplayerpack2.swf">Bloonsplayerpack2</a>
+<a href="./gfiles/flash/?swf=bloonsplayerpack3.swf">Bloonsplayerpack3</a>
+<a href="./gfiles/flash/?swf=bloonsplayerpack4.swf">Bloonsplayerpack4</a>
+<a href="./gfiles/flash/?swf=bloonsplayerpack5.swf">Bloonsplayerpack5</a>
+<a href="./gfiles/flash/?swf=bloonstd1.swf">Bloonstd1</a>
+<a href="./gfiles/flash/?swf=bloonstd3.swf">Bloonstd3</a>
+<a href="./gfiles/flash/?swf=bloonstd4.swf">Bloonstd4</a>
+<a href="./gfiles/flash/?swf=bloonstd5.swf">Bloonstd5</a>
+<a href="./gfiles/flash/?swf=bobtherobber.swf">Bobtherobber</a>
+<a href="./gfiles/flash/?swf=boombot2.swf">Boombot2</a>
+<a href="./gfiles/flash/?swf=boxhead2play.swf">Boxhead2play</a>
+<a href="./gfiles/flash/?swf=bubbletanks2.swf">Bubbletanks2</a>
+<a href="./gfiles/flash/?swf=bulletbill.swf">Bulletbill</a>
+<a href="./gfiles/flash/?swf=cactusmccoy.swf">Cactusmccoy</a>
+<a href="./gfiles/flash/?swf=cactusmccoy2.swf">Cactusmccoy2</a>
+<a href="./gfiles/flash/?swf=cargobridge.swf">Cargobridge</a>
+<a href="./gfiles/flash/?swf=causality.swf">Causality</a>
+<a href="./gfiles/flash/?swf=computerbashing.swf">Computerbashing</a>
+<a href="./gfiles/flash/?swf=crushthecastle.swf">Crushthecastle</a>
+<a href="./gfiles/flash/?swf=cubefield.swf">Cubefield</a>
+<a href="./gfiles/flash/?swf=cyclomaniacs2.swf">Cyclomaniacs2</a>
+<a href="./gfiles/flash/?swf=diggy.swf">Diggy</a>
+<a href="./gfiles/flash/?swf=donkeykong.swf">Donkeykong</a>
+<a href="./gfiles/flash/?swf=dontshootthepuppy.swf">Dontshootthepuppy</a>
+<a href="./gfiles/flash/?swf=doodledefender.swf">Doodledefender</a>
+<a href="./gfiles/flash/?swf=doom.swf">Doom</a>
+<a href="./gfiles/flash/?swf=ducklife.swf">Ducklife</a>
+<a href="./gfiles/flash/?swf=ducklife2.swf">Ducklife2</a>
+<a href="./gfiles/flash/?swf=ducklife3.swf">Ducklife3</a>
+<a href="./gfiles/flash/?swf=ducklife4.swf">Ducklife4</a>
+<a href="./gfiles/flash/?swf=earntodiesuperwheel.swf">Earntodiesuperwheel</a>
+<a href="./gfiles/flash/?swf=electricman2.swf">Electricman2</a>
+<a href="./gfiles/flash/?swf=elephantquest.swf">Elephantquest</a>
+<a href="./gfiles/flash/?swf=epicbattlefantasy3.swf">Epicbattlefantasy3</a>
+<a href="./gfiles/flash/?swf=epiccomboredux.swf">Epiccomboredux</a>
+<a href="./gfiles/flash/?swf=exitpath.swf">Exitpath</a>
+<a href="./gfiles/flash/?swf=factoryballs.swf">Factoryballs</a>
+<a href="./gfiles/flash/?swf=factoryballs2.swf">Factoryballs2</a>
+<a href="./gfiles/flash/?swf=factoryballs3.swf">Factoryballs3</a>
+<a href="./gfiles/flash/?swf=factoryballs4.swf">Factoryballs4</a>
+<a href="./gfiles/flash/?swf=flashflightsimulator.swf">Flashflightsimulator</a>
+<a href="./gfiles/flash/?swf=flight.swf">Flight</a>
+<a href="./gfiles/flash/?swf=happywheels.swf">Happywheels</a>
+<a href="./gfiles/flash/?swf=hobo.swf">Hobo</a>
+<a href="./gfiles/flash/?swf=hobo2.swf">Hobo2</a>
+<a href="./gfiles/flash/?swf=hobo3.swf">Hobo3</a>
+<a href="./gfiles/flash/?swf=hobo4.swf">Hobo4</a>
+<a href="./gfiles/flash/?swf=hobo5.swf">Hobo5</a>
+<a href="./gfiles/flash/?swf=hobo6.swf">Hobo6</a>
+<a href="./gfiles/flash/?swf=hobo7.swf">Hobo7</a>
+<a href="./gfiles/flash/?swf=interactivebuddy.swf">Interactivebuddy</a>
+<a href="./gfiles/flash/?swf=jacksmith.swf">Jacksmith</a>
+<a href="./gfiles/flash/?swf=jellytruck.swf">Jellytruck</a>
+<a href="./gfiles/flash/?swf=johnnyupgrade.swf">Johnnyupgrade</a>
+<a href="./gfiles/flash/?swf=jumpix2.swf">Jumpix2</a>
+<a href="./gfiles/flash/?swf=learn2fly.swf">Learn2fly</a>
+<a href="./gfiles/flash/?swf=magnetface.swf">Magnetface</a>
+<a href="./gfiles/flash/?swf=marioracingtournament.swf">Marioracingtournament</a>
+<a href="./gfiles/flash/?swf=megamanprojectx.swf">Megamanprojectx</a>
+<a href="./gfiles/flash/?swf=metroidelements.swf">Metroidelements</a>
+<a href="./gfiles/flash/?swf=mineblocks.swf">Mineblocks</a>
+<a href="./gfiles/flash/?swf=minesweeper.swf">Minesweeper</a>
+<a href="./gfiles/flash/?swf=mirrorsedge.swf">Mirrorsedge</a>
+<a href="./gfiles/flash/?swf=motherload.swf">Motherload</a>
+<a href="./gfiles/flash/?swf=multitask.swf">Multitask</a>
+<a href="./gfiles/flash/?swf=mutilateadoll2.swf">Mutilateadoll2</a>
+<a href="./gfiles/flash/?swf=myangel.swf">Myangel</a>
+<a href="./gfiles/flash/?swf=nanotube.swf">Nanotube</a>
+<a href="./gfiles/flash/?swf=ngame.swf">Ngame</a>
+<a href="./gfiles/flash/?swf=nucleus.swf">Nucleus</a>
+<a href="./gfiles/flash/?swf=nyancatlostinspace.swf">Nyancatlostinspace</a>
+<a href="./gfiles/flash/?swf=onemanarmy2.swf">Onemanarmy2</a>
+<a href="./gfiles/flash/?swf=pacman.swf">Pacman</a>
+<a href="./gfiles/flash/?swf=pandemic.swf">Pandemic</a>
+<a href="./gfiles/flash/?swf=pandemic2.swf">Pandemic2</a>
+<a href="./gfiles/flash/?swf=papalouie.swf">Papalouie</a>
+<a href="./gfiles/flash/?swf=papalouie2.swf">Papalouie2</a>
+<a href="./gfiles/flash/?swf=papalouie3.swf">Papalouie3</a>
+<a href="./gfiles/flash/?swf=portal.swf">Portal</a>
+<a href="./gfiles/flash/?swf=portal2d.swf">Portal2d</a>
+<a href="./gfiles/flash/?swf=qwop.swf">Qwop</a>
+<a href="./gfiles/flash/?swf=raftwars.swf">Raftwars</a>
+<a href="./gfiles/flash/?swf=raftwars2.swf">Raftwars2</a>
+<a href="./gfiles/flash/?swf=raze.swf">Raze</a>
+<a href="./gfiles/flash/?swf=redshift.swf">Redshift</a>
+<a href="./gfiles/flash/?swf=revenant2.swf">Revenant2</a>
+<a href="./gfiles/flash/?swf=run2.swf">Run2</a>
+<a href="./gfiles/flash/?swf=run3.swf">Run3</a>
+<a href="./gfiles/flash/?swf=saszombieassault3.swf">Saszombieassault3</a>
+<a href="./gfiles/flash/?swf=shoppingcarthero3.swf">Shoppingcarthero3</a>
+<a href="./gfiles/flash/?swf=siftheads.swf">Siftheads</a>
+<a href="./gfiles/flash/?swf=siftheads2.swf">Siftheads2</a>
+<a href="./gfiles/flash/?swf=siftheads3.swf">Siftheads3</a>
+<a href="./gfiles/flash/?swf=siftheads4.swf">Siftheads4</a>
+<a href="./gfiles/flash/?swf=siftheads5.swf">Siftheads5</a>
+<a href="./gfiles/flash/?swf=sniperassassin4.swf">Sniperassassin4</a>
+<a href="./gfiles/flash/?swf=sportsheadsfootball.swf">Sportsheadsfootball</a>
+<a href="./gfiles/flash/?swf=stickrpg.swf">Stickrpg</a>
+<a href="./gfiles/flash/?swf=stickrun2.swf">Stickrun2</a>
+<a href="./gfiles/flash/?swf=stickwar.swf">Stickwar</a>
+<a href="./gfiles/flash/?swf=strikeforceheroes2.swf">Strikeforceheroes2</a>
+<a href="./gfiles/flash/?swf=strikeforcekittylaststand.swf">Strikeforcekittylaststand</a>
+<a href="./gfiles/flash/?swf=sugarsugar.swf">Sugarsugar</a>
+<a href="./gfiles/flash/?swf=sugarsugar2.swf">Sugarsugar2</a>
+<a href="./gfiles/flash/?swf=sugarsugar3.swf">Sugarsugar3</a>
+<a href="./gfiles/flash/?swf=superd.swf">Superd</a>
+<a href="./gfiles/flash/?swf=superfighters.swf">Superfighters</a>
+<a href="./gfiles/flash/?swf=supermario63.swf">Supermario63</a>
+<a href="./gfiles/flash/?swf=supermarioflash.swf">Supermarioflash</a>
+<a href="./gfiles/flash/?swf=swordsandsandals2.swf">Swordsandsandals2</a>
+<a href="./gfiles/flash/?swf=tacticalassassin.swf">Tacticalassassin</a>
+<a href="./gfiles/flash/?swf=tanks.swf">Tanks</a>
+<a href="./gfiles/flash/?swf=tanktrouble.swf">Tanktrouble</a>
+<a href="./gfiles/flash/?swf=tetris.swf">Tetris</a>
+<a href="./gfiles/flash/?swf=thebindingofisaac.swf">Thebindingofisaac</a>
+<a href="./gfiles/flash/?swf=theimpossiblequiz2.swf">Theimpossiblequiz2</a>
+<a href="./gfiles/flash/?swf=theworldshardestgame2.swf">Theworldshardestgame2</a>
+<a href="./gfiles/flash/?swf=thingthingarena.swf">Thingthingarena</a>
+<a href="./gfiles/flash/?swf=tosstheturtle.swf">Tosstheturtle</a>
+<a href="./gfiles/flash/?swf=ultimateflashsonic.swf">Ultimateflashsonic</a>
 </div>
 </div>
 </div>
-<script>function gsearch(){var e,t,n,a;for(e=document.getElementById("gsearchbar").value.toUpperCase(),t=document.getElementById("glist"),a=0;a<t.querySelectorAll("a[href]").length;a++)(n=t.getElementsByTagName("a")[a]).innerHTML.toUpperCase().indexOf(e)>-1?n.style.display="block":n.style.display="none"}</script>
 </body>
 </html>

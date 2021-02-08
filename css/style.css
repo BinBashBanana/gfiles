@@ -14,7 +14,7 @@
 	font-family: sans-serif;
 }
 
-.glink {
+#glist a {
 	display: block;
 	text-decoration: none;
 	color: black;
@@ -26,7 +26,7 @@
 	transition: 0.2s ease;
 }
 
-.glink:hover {
+#glist a:hover {
 	background-color: #eee;
 	text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }

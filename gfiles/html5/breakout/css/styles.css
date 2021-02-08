@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fcf5c4;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    /*font-family: Bebas;*/
+    color:darkslategray;
+    font-weight: 900;
+}
+
+.heading p{
+    /*font-family: Raleway;*/
+    font-size: 15px;
+    color:darkslategray;
+}
+
+.heading hr{
+    width:25%;
+    border-color: darkslategray;
+    opacity: .5;
+    margin-left: 37.5%;
+    margin-top: 0px;
+/*    margin-bottom: 0px;*/
+}
+
+canvas{
+    background: #101010;
+    margin-top: 10px;
+    padding:0;
+    margin-left: 32%;
+}
+
+/*
+#myCanvas{
+    padding:0;
+}
+*/
+
+.btn{
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer{
+    background: #222;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    /*font-family: Raleway, Times, serif;*/
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.name{
+    color: aqua;
+}
+
+.heart{
+    color:red;
+}
