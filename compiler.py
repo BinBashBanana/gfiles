@@ -12,7 +12,7 @@ pregen = [".mdx", ".md", ".smd", ".gen", ".sms", ".gg", ".sg"]
 prenes = [".nes", ".fds", ".unf", ".unif"]
 pren64 = [".n64", ".v64", ".z64", ".ndd"]
 presnes = [".smc", ".sfc", ".swc", ".fig"]
-index = '''<!DOCTYPE html>\n<html>\n<head>\n<title>Games List</title>\n<link rel="stylesheet" href="./css/style.css">\n</head>\n<body>\n<div class="container">\n<div class="box">\n<input type="text" id="gsearchbar" onkeyup="var a=document.querySelectorAll('#glist a[href]');for(var i=0;i<a.length;i++)a[i].style.display=a[i].textContent.toUpperCase().indexOf(this.value.toUpperCase())!=-1?'block':'none'" autocomplete="off" spellcheck="false" placeholder="Search" />\n<div id="glist">\n%s\n</div>\n</div>\n</div>\n</body>\n</html>'''
+index = '''<!DOCTYPE html>\n<html>\n<head>\n<title>Games List</title>\n<link rel="stylesheet" href="./css/style.css">\n</head>\n<body>\n<div class="container">\n<div class="box">\n<input type="text" id="gsearchbar" onkeyup="var a=document.querySelectorAll('#glist a[href]');for(var i=0;i<a.length;i++)a[i].style.display=a[i].textContent.toUpperCase().indexOf(this.value.toUpperCase())!=-1?'block':'none'" autocomplete="off" spellcheck="false" placeholder="Search" />\n<div id="glist">\n%s\n</div>\n</div>\n</div>\n<script> </script>\n</body>\n</html>'''
 alist = '''<a href="%s">%s</a>'''
 
 # Make HTML5 lists
