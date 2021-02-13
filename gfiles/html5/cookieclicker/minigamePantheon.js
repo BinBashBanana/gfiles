@@ -391,14 +391,14 @@ M.launch=function()
 		for (var i in M.gods)
 		{
 			var me=M.gods[i];
-			AddEvent(l('templeGodDrag'+me.id),'mousedown',function(what){return function(){M.dragGod(what);}}(me));
-			AddEvent(l('templeGodDrag'+me.id),'mouseup',function(what){return function(){M.dropGod(what);}}(me));
+			AddEvent(l('templeGodDrag'+me.id),'mousedown',function(what){return function(e){if (e.button==0){M.dragGod(what);}}}(me));
+			AddEvent(l('templeGodDrag'+me.id),'mouseup',function(what){return function(e){if (e.button==0){M.dropGod(what);}}}(me));
 		}
 		for (var i in M.slot)
 		{
 			var me=M.slot[i];
 			AddEvent(l('templeSlot'+i),'mouseover',function(what){return function(){M.hoverSlot(what);}}(i));
-			AddEvent(l('templeSlot'+i),'mouseout',function(what){return function(){M.hoverSlot(-1);}}(i));
+			AddEvent(l('templeSlot'+i),'mouseout',function(what){return function(e){if (e.button==0){M.hoverSlot(-1);}}}(i));
 		}
 		
 		AddEvent(document,'mouseup',M.dropGod);

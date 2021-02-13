@@ -1511,6 +1511,7 @@ M.launch=function()
 			Game.gainLumps(10);
 			Game.Notify('Sacrifice!','You\'ve sacrificed your garden to the sugar hornets, destroying your crops and your knowledge of seeds.<br>In the remains, you find <b>10 sugar lumps</b>.',[29,14],12);
 			
+			M.seedSelected=-1;
 			Game.Win('Seedless to nay');
 			M.convertTimes++;
 			M.computeMatures();

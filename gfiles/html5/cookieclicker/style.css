@@ -1,4 +1,4 @@
-/* reset CSS */
+﻿/* reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -384,6 +384,7 @@ oh forget it this is just a mess
 
 #topBar
 {
+	display:none !important;
 	position:absolute;
 	left:0px;
 	top:0px;
@@ -829,6 +830,7 @@ input[type=range]:active::-ms-thumb,input[type=range]:hover::-ms-thumb {backgrou
 	font-size:14px;
 	font-family:Georgia;
 	font-weight:bold;
+	margin-top:-2px;
 }
 .framed .close
 {
@@ -987,6 +989,22 @@ q:after
 	position:absolute;
 	left:0px;
 	top:2px;
+	background:url(img/money.png);
+	width:16px;
+	height:16px;
+}
+.hasTinyCookie
+{
+	position:relative;
+	padding-left:18px;
+}
+.hasTinyCookie:before
+{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
 	background:url(img/money.png);
 	width:16px;
 	height:16px;
@@ -1411,10 +1429,12 @@ q:after
 	background:url(img/prestigeBar.jpg) 0px 0px;
 	position:absolute;
 	left:0px;
-	right:100%;
+	/*right:100%;*/
+	right:0px;
 	top:0px;
 	height:100%;
-	max-width:100%;
+	/*max-width:100%;*/
+	transform:translate(0px,0px);
 }
 .meter:after
 {
@@ -1433,10 +1453,11 @@ q:after
 	right:0px;
 	bottom:4px;
 	position:absolute;
+	overflow:hidden;
 }
 #ascendMeter
 {
-	right:100px;
+	/*right:100px;*/
 }
 
 .meter.filling
@@ -2189,7 +2210,7 @@ from {background-position:0px 0px;}
 	position:absolute;
 	left:0px;
 	top:0px;
-	background:url(img/buildings.png?v=4);
+	background:url(img/buildings.png?v=5);
 	background-repeat:no-repeat;
 	margin:0px;
 }
@@ -2210,7 +2231,7 @@ from {background-position:0px 0px;}
 	height:64px;
 	left:0px;
 	top:0px;
-	background:url(img/buildings.png?v=4);
+	background:url(img/buildings.png?v=5);
 	background-repeat:no-repeat;
 	margin:-16px;
 	transform:scale(0.5);
@@ -2231,12 +2252,13 @@ from {background-position:0px 0px;}
 .product .content .owned
 {
 	position:absolute;
-	right:12px;
-	top:6px;
+	right:8px;
+	bottom:5px;
 	font-size:40px;
 	opacity:0.2;
 	color:#000;
 	text-shadow:0px 0px 8px #fff;
+	letter-spacing:-2.5px;
 }
 .product .icon
 {
@@ -2250,7 +2272,7 @@ from {background-position:0px 0px;}
 {
 	z-index:100;
 	opacity:1;
-	background:url(img/buildings.png?v=4);
+	background:url(img/buildings.png?v=5);
 	background-repeat:no-repeat;
 	-webkit-transition: opacity 2s ease-out;
 	-moz-transition: opacity 2s ease-out;
@@ -2756,9 +2778,9 @@ p
 
 
 
-.green{color:#3f0;}.green b{color:inherit;}
-.red{color:#f30;}.red b{color:inherit;}
-.gray{color:#999;}.gray b{color:inherit;}
+.green,b.green{color:#3f0;}.green b{color:inherit;}
+.red,b.red{color:#f30;}.red b{color:inherit;}
+.gray,b.gray{color:#999;}.gray b{color:inherit;}
 
 #versionNumber
 {
