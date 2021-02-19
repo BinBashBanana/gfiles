@@ -40,7 +40,7 @@ for (var i = 0; i < visibleCores.length; i++) {
 // query string into object
 queries = {};
 for (var i = 0; i < search.length; i++) {
-	var p = search[i].split('=');
+	var p = search[i].split("=");
 	queries[p[0]] = p[1];
 }
 
@@ -66,14 +66,14 @@ doubleRes.onclick = function() {
 
 // logging
 var mario64p;
-function log(log) {
+function log(log, userInput) {
 	// sm64
 	if ((systems[queries["core"]] == "Nintendo 64") && (!mario64p) && log.toLowerCase().includes("goodname:")) {
 		mario64p = true;
 		if (log.toLowerCase().includes("super mario 64")) alert("Remember: Every copy of Mario 64 is personalized.");
 	}
 	console.log(log);
-	wconsole.textContent += log + "\n";
+	wconsole.textContent += (userInput ? "> " + userInput + "\n" + JSON.stringify(log) : log) + "\n";
 	wconsole.scrollTo({top: wconsole.scrollHeight});
 }
 
@@ -146,7 +146,7 @@ window.addEventListener("load", function() {
 	wconsole.wconsolemarker.onclick = function() { wconsole.wconsoleinput.focus(); }
 	wconsole.wconsoleinput.onkeydown = function(e) {
 		if (e.keyCode == 13) {
-			eval(this.value);
+			log(eval(this.value), this.value);
 			this.value = "";
 		}
 	}
@@ -317,6 +317,10 @@ function prepareBundle() {
 				}
 			});
 		}
+	}, function(error) {
+		log("Failed to get asset bundle, skipping");
+		bundleReady = true;
+		removeStatus("Getting assets");
 	});
 }
 
@@ -326,13 +330,12 @@ function initFromData(data) {
 	function waitForReady() {
 		if (wasmReady && bundleReady) {
 			setStatus("Waiting for emulator");
+			log("Initializing with " + data.byteLength + " bytes of data");
 			
 			// prevent defaults for key presses
-			window.addEventListener("keydown", function(e) {
+			document.addEventListener("keydown", function(e) {
 				if (pdKeys.includes(e.which)) e.preventDefault();
 			}, false);
-			
-			log("Initializing with " + data.byteLength + " bytes of data");
 			
 			// rom
 			FS.createDataFile("/", "rom.bin", new Uint8Array(data), true, false);
@@ -344,6 +347,7 @@ function initFromData(data) {
 			
 			// start
 			Module["callMain"](Module["arguments"]);
+			adjustCanvasSize();
 			
 			window.setTimeout(afterStart, 2000);
 			
@@ -358,17 +362,13 @@ var Module = {
 	canvas: canvas,
 	noInitialRun: true,
 	arguments: ["/rom.bin", "--verbose"],
-	preRun: [],
-	postRun: [],
+	onRuntimeInitialized: function() {
+		wasmReady = true;
+	},
 	print: function(text) {
 		log("stdout: " + text);
 	},
 	printErr: function(text) {
 		log("stderr: " + text);
-	},
-	totalDependencies: 0,
-	monitorRunDependencies: function(left) {
-		this.totalDependencies = Math.max(this.totalDependencies, left);
-		if (!left) wasmReady = true;
 	}
 };
