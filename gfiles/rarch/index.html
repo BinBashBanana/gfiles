@@ -24,6 +24,14 @@
 				</li>
 				<li>Saves
 					<ul>
+						<li class="pointer disabled" id="savegame">Save Game</li>
+						<li class="pointer disabled" id="exportsave">Export SRAM</li>
+						<li class="pointer disabled" id="importsave">Import SRAM</li>
+						<li><input type="checkbox" id="autosave" checked>Autosave (5m)</li>
+					</ul>
+				</li>
+				<li>States
+					<ul>
 						<li class="pointer disabled" id="savestate">Save State</li>
 						<li class="pointer disabled" id="loadstate">Load State</li>
 						<li class="pointer disabled" id="exportstate">Export State</li>
@@ -39,14 +47,27 @@
 				<li id="consolebutton">
 					Console
 				</li>
+				<li id="pause">
+					Pause
+				</li>
 			</ul>
 			<div id="ffd" style="display: none;">
 				<h2>Upload <span id="systemname">[System]</span> ROM</h2>
 				<input type="file" id="upload">
 				<label for="upload">Choose File</label>
-				<a href="https://github.com/libretro/" target="_blank" class="source">Source</a>
+				<div class="source">
+					<a href="https://github.com/BinBashBanana/webretro" target="_blank">Page Source</a>
+					<a href="https://github.com/libretro/" target="_blank">Emulator Source</a>
+				</div>
 			</div>
 			<canvas id="canvas" class="texturePixelated" width="800" height="600" oncontextmenu="event.preventDefault()"></canvas>
+			<div id="resume">
+				<div>
+					<h1>Paused</h1>
+					<h3>Click to resume</h3>
+				</div>
+			</div>
+			<div id="sidealertholder"></div>
 		</div>
 		<script type="text/javascript" src="assets/window.js"></script>
 		<script type="text/javascript" src="assets/base.js"></script>

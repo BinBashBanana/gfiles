@@ -4,7 +4,7 @@ if (!window.fetch) {
 	throw "Update your browser!";
 }
 
-var upload, smooth, doubleRes, resModifier, canvas, dateTime, saveState, loadState, exportState, importState, ffd, nulKeys, keybinds, pdKeys, search, queries, systems, fileExts, aCoreList, systemName, visibleCores, baseFsBundleDir, fsBundleDirs, fsBundleFiles, bundleCdn, consoleButton, wconsole, conw, loadStatus, mainArea, hoverMenu, romName;
+var upload, smooth, doubleRes, resModifier, canvas, dateTime, saveState, loadState, exportState, importState, ffd, nulKeys, keybinds, pdKeys, search, queries, systems, fileExts, aCoreList, systemName, visibleCores, baseFsBundleDir, fsBundleDirs, fsBundleFiles, bundleCdn, consoleButton, wconsole, conw, loadStatus, mainArea, hoverMenu, pauseButton, resumeOverlay, romName, stateReadersReady, saveReadersReady, sideAlertHolder, saveGame, exportSave, importSave, autosave;
 bundleCdn = "https://cdn.jsdelivr.net/gh/BinBashBanana/gstore/rarch/";
 upload = document.getElementById("upload");
 smooth = document.getElementById("smooth");
@@ -19,6 +19,13 @@ importState = document.getElementById("importstate");
 ffd = document.getElementById("ffd");
 systemName = document.getElementById("systemname");
 consoleButton = document.getElementById("consolebutton");
+pauseButton = document.getElementById("pause");
+resumeOverlay = document.getElementById("resume");
+sideAlertHolder = document.getElementById("sidealertholder");
+saveGame = document.getElementById("savegame");
+exportSave = document.getElementById("exportsave");
+importSave = document.getElementById("importsave");
+autosave = document.getElementById("autosave");
 mainArea = document.getElementById("mainarea");
 hoverMenu = document.getElementById("menu");
 search = decodeURIComponent(window.location.search).substring(1).split("&");
@@ -29,6 +36,8 @@ systems = {"genesis_plus_gx": "Genesis", "mupen64plus_next": "Nintendo 64", "nes
 visibleCores = ["genesis_plus_gx", "mupen64plus_next", "nestopia", "snes9x", "vba_next"];
 fileExts = {"GBA": ".bin, .gb, .gbc, .gba", "Genesis": ".bin, .mdx, .md, .smd, .gen, .cue, .iso, .sms, .gg, .sg, .68k, .chd", "NES": ".bin, .nes, .fds, .unf, .unif", "Nintendo 64": ".bin, .n64, .v64, .z64, .u1, .ndd", "SNES": ".bin, .smc, .sfc, .swc, .fig, .bs, .st"};
 baseFsBundleDir = "/home/web_user/retroarch/bundle";
+stateReadersReady = false;
+saveReadersReady = false;
 var wasmReady, bundleReady
 
 // make core lists
@@ -42,6 +51,27 @@ queries = {};
 for (var i = 0; i < search.length; i++) {
 	var p = search[i].split("=");
 	queries[p[0]] = p[1];
+}
+
+// side alerts
+function sideAlert(initialText, time) {
+	var p = document.createElement("p");
+	p.className = "sidealert";
+	p.appendChild(document.createTextNode(initialText));
+	sideAlertHolder.appendChild(p);
+	window.setTimeout(function() {
+		p.classList.add("on");
+	}, 10);
+	this.dismiss = function() {
+		p.classList.remove("on");
+		window.setTimeout(function() {
+			p.remove();
+		}, 100);
+	}
+	this.setText = function(text) {
+		p.textContent = text;
+	}
+	if (time) window.setTimeout(this.dismiss, time);
 }
 
 // toggle between sharp and smooth canvas graphics
@@ -61,6 +91,30 @@ doubleRes.onclick = function() {
 	} else {
 		resModifier = 1;
 		adjustCanvasSize();
+	}
+}
+
+// change background for status messages
+function setStatus(message) {
+	loadStatus = message;
+	canvas.style.backgroundImage = 'url("data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><text style="font: 30px sans-serif;" fill="white" x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">Loading</text><text style="font: 15px sans-serif;" fill="white" x="50%" y="60%" dominant-baseline="middle" text-anchor="middle">' + message + '</text></svg>') + '")';
+}
+
+// remove status messages
+function removeStatus(message) {
+	if (loadStatus === message) setStatus("");
+}
+
+// adjust canvas size to window
+function adjustCanvasSize() {
+	if (window.innerHeight >= window.innerWidth * (3/4)) {
+		var s = window.innerWidth * resModifier;
+		canvas.width = s;
+		canvas.height = Math.floor(s * (3/4));
+	} else {
+		var s = window.innerHeight * resModifier;
+		canvas.width = Math.floor(s * (4/3));
+		canvas.height = s;
 	}
 }
 
@@ -93,7 +147,7 @@ function grab(url, type, success, fail) {
 	req.send();
 }
 
-// file reader
+// file readers
 function readFile(file, callback) {
 	var reader = new FileReader();
 	reader.onload = function() {
@@ -102,28 +156,26 @@ function readFile(file, callback) {
 	reader.readAsArrayBuffer(file);
 }
 
-// change background for status messages
-function setStatus(message) {
-	loadStatus = message;
-	canvas.style.backgroundImage = 'url("data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><text style="font: 30px sans-serif;" fill="white" x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">Loading</text><text style="font: 15px sans-serif;" fill="white" x="50%" y="60%" dominant-baseline="middle" text-anchor="middle">' + message + '</text></svg>') + '")';
+function downloadFile(data, name) {
+	var a = document.createElement("a");
+	a.download = name;
+	a.href = URL.createObjectURL(new Blob([data], {type: "application/octet-stream"}));
+	a.click();
+	window.setTimeout(function() {
+		URL.revokeObjectURL(a.href);
+	}, 2000);
 }
 
-// remove status messages
-function removeStatus(message) {
-	if (loadStatus === message) setStatus("");
-}
-
-// adjust canvas size to window
-function adjustCanvasSize() {
-	if (window.innerHeight >= window.innerWidth * (3/4)) {
-		var s = window.innerWidth * resModifier;
-		canvas.width = s;
-		canvas.height = Math.floor(s * (3/4));
-	} else {
-		var s = window.innerHeight * resModifier;
-		canvas.width = Math.floor(s * (4/3));
-		canvas.height = s;
+function uploadFile(accept, callback) {
+	var input = document.createElement("input");
+	input.type = "file";
+	input.accept = accept;
+	input.onchange = function() {
+		readFile(this.files[0], function(data) {
+			callback(data);
+		});
 	}
+	input.click();
 }
 
 window.addEventListener("load", function() {
@@ -252,51 +304,6 @@ window.addEventListener("load", function() {
 	}
 }, false);
 
-// runs after emulator starts
-function afterStart() {
-	// remove loading text
-	canvas.style.background = "none";
-	adjustCanvasSize();
-	
-	// functions for export/import save buttons
-	saveState.classList.remove("disabled");
-	importState.classList.remove("disabled");
-	
-	saveState.onclick = function() {
-		Module._cmd_save_state();
-		loadState.classList.remove("disabled");
-		exportState.classList.remove("disabled");
-	}
-	loadState.onclick = function() {
-		Module._cmd_load_state();
-	}
-	exportState.onclick = function() {
-		var a = document.createElement('a');
-		a.style.display = 'none';
-		a.download = "game-save-"+romName+"-"+dateTime.getFullYear().toString()+"-"+(dateTime.getMonth()+1).toString()+"-"+dateTime.getDate().toString()+"-"+dateTime.getHours().toString()+"-"+dateTime.getMinutes().toString() + ".state";
-		a.href = URL.createObjectURL(new Blob([FS.readFile("/home/web_user/retroarch/userdata/states/rom.state")], {type: "application/octet-stream"}));
-		document.body.appendChild(a);
-		a.click();
-		window.setTimeout(function() {
-			document.body.removeChild(a);
-			URL.revokeObjectURL(a.href);
-		}, 2000);
-	}
-	importState.onclick = function() {
-		var input = document.createElement("input");
-		input.type = "file";
-		input.accept = ".bin, .state, .save, .dat, .gam, .sav, application/*";
-		input.onchange = function() {
-			readFile(this.files[0], function(data) {
-				FS.writeFile("/home/web_user/retroarch/userdata/states/rom.state", new Uint8Array(data));
-				loadState.classList.remove("disabled");
-				exportState.classList.remove("disabled");
-			});
-		}
-		input.click();
-	}
-}
-
 // prepare FS with bundle
 function prepareBundle() {
 	setStatus("Getting assets");
@@ -324,6 +331,125 @@ function prepareBundle() {
 	});
 }
 
+// save game
+function saveSRAM() {
+	Module._cmd_savefiles();
+	window.setTimeout(function() {
+		if (FS.analyzePath("/home/web_user/retroarch/userdata/saves/rom.srm").exists) {
+			window.localStorage.setItem("RetroArch_saves_" + romName, JSON.stringify(Array.from(FS.readFile("/home/web_user/retroarch/userdata/saves/rom.srm"))));
+			new sideAlert("Saved", 3000);
+			readySaveReaders();
+		} else {
+			autosave.checked = false;
+			new sideAlert("This game does not save!", 3000);
+		}
+	}, 1000);
+}
+
+// more functions for state buttons
+function readyStateReaders() {
+	if (!stateReadersReady) {
+		stateReadersReady = true;
+		
+		loadState.classList.remove("disabled");
+		exportState.classList.remove("disabled");
+		
+		loadState.onclick = function() {
+			Module._cmd_load_state();
+		}
+		exportState.onclick = function() {
+			downloadFile(FS.readFile("/home/web_user/retroarch/userdata/states/rom.state"), "game-state-"+romName+"-"+dateTime.getFullYear().toString()+"-"+(dateTime.getMonth()+1).toString()+"-"+dateTime.getDate().toString()+"-"+dateTime.getHours().toString()+"-"+dateTime.getMinutes().toString() + ".state");
+		}
+	}
+}
+
+// more functions for save buttons
+function readySaveReaders() {
+	if (!saveReadersReady) {
+		saveReadersReady = true;
+		
+		exportSave.classList.remove("disabled");
+		
+		exportSave.onclick = function() {
+			downloadFile(FS.readFile("/home/web_user/retroarch/userdata/saves/rom.srm"), "game-sram-"+romName+"-"+dateTime.getFullYear().toString()+"-"+(dateTime.getMonth()+1).toString()+"-"+dateTime.getDate().toString()+"-"+dateTime.getHours().toString()+"-"+dateTime.getMinutes().toString() + ".srm");
+		}
+	}
+}
+
+// runs after emulator starts
+function afterStart() {
+	// remove loading text
+	canvas.style.background = "none";
+	adjustCanvasSize();
+	
+	// functions for save and state buttons
+	saveState.classList.remove("disabled");
+	importState.classList.remove("disabled");
+	
+	saveGame.classList.remove("disabled");
+	importSave.classList.remove("disabled");
+	
+	saveState.onclick = function() {
+		Module._cmd_save_state();
+		readyStateReaders();
+	}
+	importState.onclick = function() {
+		uploadFile(".bin, .state, .save, .dat, .gam, .sav, application/*", function(data) {
+			FS.writeFile("/home/web_user/retroarch/userdata/states/rom.state", new Uint8Array(data));
+			new sideAlert("Imported state", 3000);
+			readyStateReaders();
+		});
+	}
+	
+	saveGame.onclick = function() {
+		new sideAlert("Saving...", 3000);
+		saveSRAM();
+	}
+	importSave.onclick = function() {
+		uploadFile(".bin, .srm, .sram, .ram, .gam, .sav, application/*", function(data) {
+			autosave.checked = false;
+			window.localStorage.setItem("RetroArch_saves_" + romName, JSON.stringify(Array.from(new Uint8Array(data))));
+			if (confirm("Save imported. Reloading now for changes to take effect.")) window.location.reload();
+		});
+	}
+	
+	// autosaving
+	function autosaveSRAM() {
+		if (autosave.checked) {
+			new sideAlert("Autosaving...", 3000);
+			saveSRAM();
+		}
+		window.setTimeout(function() {
+			autosaveSRAM();
+		}, 300000);
+	}
+	window.setTimeout(function() {
+		autosaveSRAM();
+	}, 300000);
+	
+	// also allow the state readers on F2 press
+	document.addEventListener("keydown", function(e) {
+		if (e.which == 113) readyStateReaders();
+	}, false);
+	
+	// pause and resume
+	pause.style.display = "initial";
+	pause.onclick = function() {
+		if (this.textContent.trim() == "Pause") {
+			Module.pauseMainLoop();
+			this.textContent = "Resume";
+			document.body.classList.add("paused");
+		} else {
+			Module.resumeMainLoop();
+			this.textContent = "Pause";
+			document.body.classList.remove("paused");
+		}
+	}
+	resumeOverlay.onclick = function() {
+		pause.click();
+	}
+}
+
 // start
 function initFromData(data) {
 	window.onbeforeunload = function() { return true; }
@@ -340,6 +466,14 @@ function initFromData(data) {
 			// rom
 			FS.createDataFile("/", "rom.bin", new Uint8Array(data), true, false);
 			
+			// save
+			if (window.localStorage.getItem("RetroArch_saves_" + romName)) {
+				FS.createPath("/", "home/web_user/retroarch/userdata/saves", true, true);
+				FS.writeFile("/home/web_user/retroarch/userdata/saves/rom.srm", new Uint8Array(JSON.parse(window.localStorage.getItem("RetroArch_saves_" + romName))));
+				new sideAlert("Save loaded for " + romName, 5000);
+				readySaveReaders();
+			}
+			
 			// config
 			var config = nulKeys + keybinds;
 			FS.createPath("/", "home/web_user/retroarch/userdata", true, true);
@@ -350,7 +484,6 @@ function initFromData(data) {
 			adjustCanvasSize();
 			
 			window.setTimeout(afterStart, 2000);
-			
 		} else {
 			window.setTimeout(waitForReady, 1000);
 		}
