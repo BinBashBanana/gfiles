@@ -3,15 +3,15 @@ body {
 	font-family: sans-serif;
 }
 
-.main {
+#mainarea {
 	background: black;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
 	overflow: hidden;
 }
 
@@ -21,12 +21,21 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 100vh !important;
-	width: auto !important;
 	/*image-resolution: 2dppx;*/
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iNTAiPjx0ZXh0IHN0eWxlPSJmb250OiAzMHB4IHNhbnMtc2VyaWY7IiBmaWxsPSJ3aGl0ZSIgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvYWRpbmc8L3RleHQ+PC9zdmc+");
 	background-repeat: no-repeat;
 	background-position: center;
+	z-index: 4;
+	height: 100vh !important;
+	width: auto !important;
+}
+
+#canvasmask {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-100vw) translate(-50%, -50%);
+	z-index: 5;
 }
 
 @media (min-height: 75vw) {
@@ -34,6 +43,10 @@ body {
 		height: auto !important;
 		width: 100vw !important;
 	}
+}
+
+#canvasmask>* {
+	transform: translateX(100vw);
 }
 
 #canvas.textureSmooth {
@@ -138,6 +151,11 @@ body {
 	white-space: pre;
 }
 
+.console::selection, .consoleinput::selection {
+	background-color: #f3f3f3;
+	color: black;
+}
+
 .consolemarker {
 	width: 16px;
 	height: 16px;
@@ -164,53 +182,75 @@ ul {
 	margin: 0;
 }
 
-.menu {
+#menu {
 	position: fixed;
 	display: none;
-	background: #fff;
+	background: #ffffff;
 	transition: opacity 0.3s ease;
 	z-index: 20;
 	opacity: 0;
 }
 
-.menu:hover {
+#menu:hover, #menu.show {
 	opacity: 0.9;
 }
 
-.menu li {
+#menuindicator {
+	position: absolute;
+	display: none;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50px;
+	background-color: black;
+	border-radius: 2px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 20px;
+}
+
+#menuindicator.show {
+	display: block;
+}
+
+#menuindicator h1, #menuindicator h2 {
+	margin: 0px;
+}
+
+#menu li {
 	white-space: nowrap;
 	max-width: 250px;
 	position: relative;
 }
 
-.menu>li {
+#menu>li {
 	padding: 12px 16px;
 	cursor: pointer;
 	display: inline-block;
 }
 
-.menu li:not(.disabled):hover {
+#menu li:not(.disabled):hover {
 	background: rgba(0, 0, 0, .1);
 }
 
-.menu li input {
+#menu li input {
 	transform: scale(1.5);
 	cursor: pointer;
 	margin: 0px 12px 0px 0px;
 }
 
-.menu li a {
+#menu li a {
 	text-decoration: underline;
 	color: black;
 }
 
 /* both opacity AND visibility are important in this case */
-.menu li:hover>ul {
+#menu li:hover>ul {
 	visibility: visible;
 	opacity: 1;
 }
 
-.menu ul {
+#menu ul {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
@@ -220,17 +260,21 @@ ul {
 	transition: opacity 0.3s ease;
 }
 
-.menu ul li {
+#menu ul li {
 	padding: 4px 12px;
 	cursor: default;
 }
 
-.menu ul li.pointer {
+#menu ul li.pointer {
 	cursor: pointer;
 }
 
-.menu li.disabled {
+#menu li.disabled {
 	color: #666;
+	cursor: not-allowed !important;
+}
+
+input[disabled] {
 	cursor: not-allowed !important;
 }
 
@@ -245,7 +289,7 @@ ul {
 	text-align: center;
 	border-radius: 2px;
 	overflow: auto;
-	z-index: 5;
+	z-index: 8;
 }
 
 #ffd::before {
@@ -312,27 +356,29 @@ input[type="file"] {
 
 #ffd .source {
 	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-	bottom: 5px;
+	bottom: 0px;
+	width: 100%;
 }
 
-#ffd .source a {
+#ffd .source * {
 	text-decoration: none;
 	color: black;
 	font-size: 10px;
 	margin: 0px 5px;
+	vertical-align: top;
 }
 
-#pause {
-	display: none;
+#ffd .source span {
+	position: absolute;
+	right: 5px;
+	font-weight: bold;
 }
 
 #resume {
 	z-index: 10;
 	position: absolute;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	user-select: none;
 	display: none;
 }
@@ -368,7 +414,7 @@ body.paused #resume {
 #sidealertholder {
 	position: absolute;
 	right: 0px;
-	height: 100vh;
+	bottom: 0px;
 	width: 200px;
 	display: flex;
 	flex-direction: column;
@@ -382,6 +428,7 @@ body.paused #resume {
 	padding: 5px 8px;
 	opacity: 0;
 	transition: opacity 0.1s ease-in;
+	position: relative;
 }
 
 .sidealert.on {

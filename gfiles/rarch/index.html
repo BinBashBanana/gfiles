@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- https://github.com/BinBashBanana/webretro -->
 <html>
 	<head>
 		<title>Emulator</title>
@@ -6,7 +7,11 @@
 	</head>
 	<body>
 		<div class="main" id="mainarea">
-			<ul class="menu" id="menu">
+			<ul id="menu">
+				<div id="menuindicator">
+					<h1>&uarr;</h1>
+					<h2>Menu</h2>
+				</div>
 				<li>Controls
 					<ul>
 						<li>Start: Enter</li>
@@ -27,27 +32,32 @@
 						<li class="pointer disabled" id="savegame">Save Game</li>
 						<li class="pointer disabled" id="exportsave">Export SRAM</li>
 						<li class="pointer disabled" id="importsave">Import SRAM</li>
-						<li><input type="checkbox" id="autosave" checked>Autosave (5m)</li>
+						<li class="disabled"><input type="checkbox" id="autosave" checked disabled>Autosave (5m)</li>
 					</ul>
 				</li>
 				<li>States
 					<ul>
-						<li class="pointer disabled" id="savestate">Save State</li>
-						<li class="pointer disabled" id="loadstate">Load State</li>
+						<li class="pointer disabled" id="savestate" title="F2">Save State</li>
+						<li class="pointer disabled" id="loadstate" title="F3">Load State</li>
+						<li class="pointer disabled" id="undosavestate">Undo Save State</li>
+						<li class="pointer disabled" id="undoloadstate">Undo Load State</li>
 						<li class="pointer disabled" id="exportstate">Export State</li>
 						<li class="pointer disabled" id="importstate">Import State</li>
 					</ul>
 				</li>
 				<li>Graphics
 					<ul>
-						<li><input type="checkbox" id="smooth">Smooth Pixels</li>
-						<li title="Warning: this will make the cursor position innacurate. You probably won't notice it unless you are using the menu."><input type="checkbox" id="doubleres">Double Resolution</li>
+						<li class="disabled"><input type="checkbox" id="smooth" disabled>Smooth Pixels</li>
+						<li class="disabled" title="Warning: this will make the cursor position innacurate. You probably won't notice it unless you are using the menu."><input type="checkbox" id="doubleres" disabled>Double Resolution</li>
 					</ul>
 				</li>
 				<li id="consolebutton">
 					Console
 				</li>
-				<li id="pause">
+				<li id="menubutton" class="disabled" title="F1">
+					Menu
+				</li>
+				<li id="pause" class="disabled">
 					Pause
 				</li>
 			</ul>
@@ -58,16 +68,20 @@
 				<div class="source">
 					<a href="https://github.com/BinBashBanana/webretro" target="_blank">Page Source</a>
 					<a href="https://github.com/libretro/" target="_blank">Emulator Source</a>
+					<a href="https://emscripten.org/" target="_blank">Emscripten</a>
+					<span>v6.0</span>
 				</div>
 			</div>
-			<canvas id="canvas" class="texturePixelated" width="800" height="600" oncontextmenu="event.preventDefault()"></canvas>
-			<div id="resume">
-				<div>
-					<h1>Paused</h1>
-					<h3>Click to resume</h3>
+			<canvas id="canvas" class="texturePixelated"></canvas>
+			<div id="canvasmask">
+				<div id="resume">
+					<div>
+						<h1>Paused</h1>
+						<h3>Click to resume</h3>
+					</div>
 				</div>
+				<div id="sidealertholder"></div>
 			</div>
-			<div id="sidealertholder"></div>
 		</div>
 		<script type="text/javascript" src="assets/window.js"></script>
 		<script type="text/javascript" src="assets/base.js"></script>

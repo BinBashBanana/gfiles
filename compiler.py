@@ -7,7 +7,7 @@ html5gamesin = "html5/"
 rarchgamesin = "rarch/"
 romdir = "roms/*"
 flashgamesin = "flash/"
-pregba = [".gba"]
+pregba = [".gba", ".gb", ".gbc"]
 pregen = [".mdx", ".md", ".smd", ".gen", ".sms", ".gg", ".sg"]
 prenes = [".nes", ".fds", ".unf", ".unif"]
 pren64 = [".n64", ".v64", ".z64", ".ndd"]
@@ -25,11 +25,11 @@ for x in range(0, len(html5_1)):
 
 # Make GBA lists
 gba_1 = list(chain.from_iterable([[os.path.basename(x) for x in glob.glob(outdir + rarchgamesin + romdir + y)] for y in pregba]))
-gba_2 = ["\n<h2>Gameboy Advance</h2>", alist % (outdir + rarchgamesin + "?core=vba_next", "Upload ROM")]
+gba_2 = ["\n<h2>Gameboy Advance</h2>", alist % (outdir + rarchgamesin + "?core=mgba", "Upload ROM")]
 
 # Generate HTML code for GBA list
 for x in range(0, len(gba_1)):
-	gba_2.append(alist % (outdir + rarchgamesin + "?core=vba_next&rom=" + gba_1[x], os.path.splitext(gba_1[x])[0].capitalize()))
+	gba_2.append(alist % (outdir + rarchgamesin + "?core=mgba&rom=" + gba_1[x], os.path.splitext(gba_1[x])[0].capitalize()))
 
 # Make Genesis lists
 gen_1 = list(chain.from_iterable([[os.path.basename(x) for x in glob.glob(outdir + rarchgamesin + romdir + y)] for y in pregen]))
