@@ -199,7 +199,7 @@ ctx.canvas.height = window.innerHeight
 document.getElementsByClassName("_1chbfei")[0].setAttribute('style', 'max-width: 100vw !important')
 */
 var MathGlob = Math
-function MineKhan() {
+function MineJS() {
 	let Math = MathGlob
 	let setPixel, getPixels
 	let textures = {
@@ -914,7 +914,7 @@ function MineKhan() {
 
 	async function createDatabase() {
 		return await new Promise(async (resolve, reject) => {
-			let request = window.indexedDB.open("MineKhan", 1)
+			let request = window.indexedDB.open("MineJS", 1)
 
 			request.onupgradeneeded = function(event) {
 				let DB = event.target.result
@@ -5278,7 +5278,7 @@ function MineKhan() {
 		initPlayer()
 		initWebgl()
 
-		if (win.location.origin === "https://www.kasandbox.org" && (loadString || MineKhan.toString().length !== 149456)) {
+		if (win.location.origin === "https://www.kasandbox.org" && (loadString || MineJS.toString().length !== 149456)) {
 			// Prevent Ctrl F
 			message.innerHTML = '.oot lanigiro eht tuo kcehc ot>rb<erus eb ,siht ekil uoy fI>rb<.dralliW yb >a/<nahKeniM>"wen_"=tegrat "8676731005517465/cm/sc/gro.ymedacanahk.www//:sptth"=ferh a< fo>rb<ffo-nips a si margorp sihT'.split("").reverse().join("")
 		}
@@ -5481,7 +5481,7 @@ function MineKhan() {
 	return gameLoop
 }
 
-init = MineKhan()
+init = MineJS()
 if (window.raf) {
 	window.cancelAnimationFrame(window.raf)
 	console.log("Canceled", window.raf)
