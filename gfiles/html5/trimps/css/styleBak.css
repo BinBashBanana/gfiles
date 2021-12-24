@@ -1,0 +1,346 @@
+#settingsRow{
+	position: fixed;
+	bottom: 0;
+	background-color: grey;
+	width: 100%;
+	left: 0;
+	height: 30px;
+}
+
+#settingsTable{
+	width: 100%;
+}
+#buyCol{
+	height: 100%;
+}
+#wrapper{
+	padding: 15px;
+	height: 100%;
+}
+.thing {
+	border: 1px solid black;
+}
+#grid {
+	width: 100%;
+	height: 100%;
+}
+.battleCell{
+	width: 10%;
+	height: 10%;
+}
+.pointer{
+	cursor: pointer;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.playerGather{
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+	height: 96%;
+	border: 1px solid black;
+	padding-bottom: 10px;
+}
+.progress {
+	margin-bottom: 0;
+}
+.title{
+	font-weight: bold;
+	font-size: 1.4em;
+}
+#rightCol{
+	height: 100%;
+}
+#topRow{
+	height: 18%;
+	min-height: 180px;
+}
+
+.ownedArea{
+	font-size: 1.3em;
+}
+#bottomRow{
+	height: 75%;
+	min-height: 500px;
+}
+#leftMenu{
+	height: 100%;
+	padding: 10px;
+	padding-top: 0;
+}
+
+.buyTitle{
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.colDiv{
+	text-align: center;
+	font-size: 1.2em;
+}
+.message{
+	display: block;
+	margin-top: 5px;
+	font-size: 1.3em;
+}
+#logContainer{
+	margin-top: 10px;
+	width: 100%;
+	border: 2px solid black;
+	padding-top: 5px;
+}
+.titleRow{
+	margin: 0;
+	margin-bottom: 5px;
+	color: black;
+	border-bottom: 2px solid black;
+}
+.buyHere{
+	height: 150px;
+	padding: 5px;
+	overflow-y: auto;
+}
+.thing{
+	display: inline-block;
+	width: 30%;
+	padding: 5px;
+	text-align: center;
+	background-color: #5B6073;
+	color: white;
+	font-size: 1.2em;
+	border: 1px solid white;
+}
+.queueItem{
+	display: inline-block;
+	font-size: .9em;
+	border: 1px solid black;
+	cursor: pointer;
+	text-align: center;
+	padding: 2px;
+}
+#fireBtn{
+	margin-top: 5px;
+	min-width: 60%;
+	padding: 4px;
+}
+#structuresCollectBtn{
+	min-width: 60%;
+	padding: 4px;
+}
+#scienceCollectBtn{
+	min-width: 60%;
+	padding: 4px;
+}
+#structuresQueue{
+	height: 50px;
+	overflow-y: auto;
+}
+
+#noQueue{
+	font-size: 1.4em;
+}
+.queueItem:nth-child(0){
+	border: 1px solid yellow;
+}
+#structures{
+	text-align: center;
+}
+.queue{
+	padding: 3px;
+	color: black;
+}
+#trimpTrapText{
+	font-size: .75em;
+}
+
+.buyBox{
+	border: 2px solid black;
+	margin: 0 0 5px 0;
+}
+
+#grid{
+	height: 50%;
+	width: 100%;
+	border-top: 0;
+	text-align: center;
+}
+#mapGrid{
+	height: 50%;
+	width: 100%;
+	border-top: 0;
+	text-align: center;
+}
+.battleCell{
+	border: 1px solid black;
+}
+.collecting{
+	padding: 6px;
+}
+
+#log{
+	margin-top: 5px;
+	height: 25%;
+	max-height: 40%;
+	width: 100%;
+	overflow-y: scroll;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-right: 5px;
+}
+
+#settings{
+	padding-top: 25px;
+}
+#tooltipDiv{
+	width: 25%;
+	position: absolute;
+	background: lightgrey;
+	display: none;
+	padding: 10px;
+	border: 2px solid blue;
+	font-size: 1.2em;
+}
+.maxCenter: {
+	width: 100%;
+	text-align: center;
+}
+#tipTitle {
+	font-size: 1.2em;
+	text-align: center;
+}
+.battleStatsTitle{
+	font-size: 1.2em;
+}
+.errorMessage {
+	color: red;
+}
+#battleContainer{
+ border: 2px solid black;
+ padding: 10px;
+}
+#battleTimer{
+	text-align: center;
+	font-size: 1.5em;
+}
+#battleHead{
+	text-align: center;
+}
+#equipmentContainer{
+	padding-left: 25px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 50%;
+}
+
+#battleHeadTitle{
+	font-size: 1.6em;
+	text-align: center;
+	display: inline-block;
+}
+
+.equipmentThing{
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-size: 1.2em;
+	border: 1px solid white;
+}
+
+.niceScroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+.niceScroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.niceScroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logFlt{
+	border-radius: 0;
+}
+
+#preMapsTitle{
+	width: 100%;
+	text-align: center;
+	font-size: 1.3em;
+}
+#selectedMapContainer{
+	font-size: 1.2em;
+	text-align: center;
+}
+#selectedMapName{
+	text-decoration: underline;
+}
+
+@media (max-height:768px){
+	#grid{
+		height: 28%;
+		width: 100%;
+	}
+	#mapGrid{
+		height: 30%;
+		width: 100%;
+	}
+	#equipmentContainer{
+		height: 30%;
+	}
+	#buyCol{
+		height: 60%;
+	}
+	.title{
+		font-size: 1.1em;
+	}
+	.ownedArea{
+		font-size: 1em;
+	}
+	.workBtn{
+		padding: 2px;
+	}
+	.logFlt{
+		padding: 0;
+	}
+	#battleHeadTitle{
+		font-size: 1em;
+	}
+	.fightBtn{
+		font-size: .8em;
+		padding: 3px;
+	}
+	#wrapper{
+		height: 95%;
+	}
+	.thing{
+		font-size: .9em;
+	}
+	.equipmentThing{
+		font-size: .9em;
+	}
+	.titleRow{
+		font-size: .8em;
+	}
+}

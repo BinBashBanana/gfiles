@@ -1,0 +1,515 @@
+  #mapGrid ul li.battleCell.TrimpmasSnow{
+	color: #0082bc;
+	background: linear-gradient(45deg, rgba(255,255,255,0.8), rgba(189,255,255,0.8)) !important;
+  }
+  .battleCell.cellColorNotBeaten.Corruption
+  {
+	background: -webkit-linear-gradient(top, #33095b 0%,#23063f 100%) !important;
+  }
+
+  .battleCell.cellColorBeaten.Corruption
+  {
+	background: -webkit-linear-gradient(top, #8114ff 0%,#6e10cc 100%) !important;
+  }
+
+  .battleCell.cellColorBeaten, #mapGrid ul li.battleCell.cellColorBeaten
+  {
+	background: -webkit-linear-gradient(top, #008d00 0%, #006c00 100%) !important;
+  }
+
+  #grid .battleRow
+  {
+	background: -webkit-linear-gradient(top, #999999 0%,#686868 90%) !important;
+  }
+
+  #mapGrid
+  {
+	background: rgba(0,0,0,0) !important;
+  }
+
+  #mapGrid .cellColorNotBeaten
+  {
+	background: -webkit-linear-gradient(top, #b9b9b9 0%,#686868 100%) !important;
+  }
+
+  #wrapper.wrapperBroken #innerWrapper{ 
+	background: -webkit-linear-gradient(left, #323341 12%,#626368 29.5%,#727275 47%,#727275 53%,#4c4d56 70.5%,#323341 88%); 
+  }
+
+  #wrapper.wrapperUnbroken #innerWrapper{
+	background: -webkit-linear-gradient(top, #323341 12%,#626368 29.5%,#727275 47%,#727275 53%,#4c4d56 70.5%,#323341 88%);
+  }
+
+  #autoPrestigeBtn.settingBtn4 {
+	background: -webkit-linear-gradient(-45deg, #5a00d2 0%, #8a00ff 10%, #5a00d2 20%, #8a00ff 30%, #5a00d2 40%, #8a00ff 50%, #5a00d2 60%, #8a00ff 70%, #5a00d2 80%, #8a00ff 90%, #5a00d2 100%);
+  }
+
+  .cellColorOverkill, #mapGrid ul li.battleCell.cellColorOverkill
+  {
+	background: -webkit-linear-gradient(top, #74e800 0%,#5ab500 100%) !important;
+  }
+
+  #mapGrid ul li.battleCell.cellColorOverkill.voidCell
+  {
+	background: -webkit-linear-gradient(top, #845def 0%,#7251d6 100%) !important;
+  }
+
+  #mapGrid ul li.battleCell.cellColorBeaten.voidCell
+  {
+	background: -webkit-linear-gradient(top, #8114ff 0%,#6e10cc 100%) !important;
+  }
+
+  #mapGrid .battleCell.cellColorNotBeaten.voidCell
+  {
+	background: -webkit-linear-gradient(top, #33095b 0%,#23063f 100%) !important;
+  }
+
+  #mapGrid ul li.voidCell.cellColorNotBeaten.CorruptSnow{
+	color: #6082bc;
+	background: linear-gradient(45deg, rgba(255,255,255,0.8), rgba(221,175,255,0.8)) !important;
+  }
+
+  .battleCell.cellColorOverkill.Corruption
+  {
+	background: -webkit-linear-gradient(top, #845def 0%,#7251d6 100%) !important;
+  }
+
+  .spireCell.cellColorNotBeaten
+  {
+	background: -webkit-linear-gradient(top, #9b96b7 0%,#85819e 100%) !important;
+  }
+
+  .battleCell.Magma.cellColorNotBeaten
+  {
+	background: -webkit-linear-gradient(top, #960000 0%,#7c0000 100%) !important;
+  }
+
+  .battleCell.Magma.cellColorBeaten
+  {
+	background: -webkit-linear-gradient(top, #633300 0%,#492600 100%) !important;
+  }
+
+  .battleCell.Magma.cellColorOverkill
+  {
+	background: -webkit-linear-gradient(top, #895000 0%,#704100 100%) !important;
+  }
+
+  .battleCell.empoweredCellPoison
+  {
+	background: -webkit-linear-gradient(top,rgba(60, 180, 60, 0.75) 0%, rgba(45, 135, 45, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellPoison.cellColorBeaten
+  {
+	background: -webkit-linear-gradient(top,rgba(40, 135, 40, 0.75) 0%, rgba(30, 90, 30, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellPoison.cellColorOverkill
+  {
+	background: -webkit-linear-gradient(top,rgba(90, 220, 90, 0.75) 0%, rgba(50, 150, 50, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellWind
+  {
+	background: -webkit-linear-gradient(top,rgba(72, 90, 156, 0.75) 0%, rgba(54, 68, 117, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellWind.cellColorBeaten
+  {
+	background: -webkit-linear-gradient(top,rgba(33, 46, 165, 0.75) 0%, rgba(23, 33, 110, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellWind.cellColorOverkill
+  {
+	background: -webkit-linear-gradient(top,rgba(124, 150, 208, 0.75) 0%, rgba(93, 116, 156, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellIce
+  {
+	background: -webkit-linear-gradient(top,rgba(60, 60, 240, 0.75) 0%, rgba(45, 45, 180, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellIce.cellColorBeaten
+  {
+	background: -webkit-linear-gradient(top,rgba(60, 60, 180, 0.75) 0%, rgba(40, 40, 120, 0.75) 100%) !important;
+  }
+
+  .battleCell.empoweredCellIce.cellColorOverkill
+  {
+	background: -webkit-linear-gradient(top,rgba(125, 125, 250, 0.75) 0%, rgba(83, 83, 165, 0.75) 100%) !important;
+  }
+
+  #grid.liquid ul#row9 li
+  {
+	background: -webkit-linear-gradient(top, #ffff00 0%,#f7f700 100%);
+  }
+
+  #grid.liquid ul#row8 li
+  {
+	background: -webkit-linear-gradient(top, #f7f700 0%,#f0f000 100%);
+  }
+
+  #grid.liquid ul#row7 li
+  {
+	background: -webkit-linear-gradient(top, #f0f000 0%,#e8e800 100%);
+  }
+
+  #grid.liquid ul#row6 li
+  {
+	background: -webkit-linear-gradient(top, #e8e800 0%,#e0e000 100%);
+  }
+
+  #grid.liquid ul#row5 li
+  {
+	background: -webkit-linear-gradient(top, #e0e000 0%,#d9d900 100%);
+  }
+
+  #grid.liquid ul#row4 li
+  {
+	background: -webkit-linear-gradient(top, #d9d900 0%,#d1d100 100%);
+  }
+
+  #grid.liquid ul#row3 li
+  {
+	background: -webkit-linear-gradient(top, #d1d100 0%,#c9c900 100%);
+  }
+
+  #grid.liquid ul#row2 li
+  {
+	background: -webkit-linear-gradient(top, #c9c900 0%,#c1c100 100%);
+  }
+
+  #grid.liquid ul#row1 li
+  {
+	background: -webkit-linear-gradient(top, #c1c100 0%,#baba00 100%);
+  }
+
+  #grid.liquid ul#row0 li
+  {
+	background: -webkit-linear-gradient(top, #baba00 0%,#b2b200 100%);
+  }
+
+  .liquid .battleCell.cellColorCurrent {
+	background: -webkit-linear-gradient(top, rgb(186, 186, 0) 0%, rgb(178, 178, 0) 100%) !important;
+  }
+
+  .battleCell.cellColorBeaten.Healthy
+  {
+	background: -webkit-linear-gradient(top, #38829b 0%,#246267 100%) !important;
+  }
+
+  .battleCell.cellColorOverkill.Healthy
+  {
+	background: -webkit-linear-gradient(top, #38a2bb 0%,#248287 100%) !important;
+  }
+
+  .battleCell.cellColorNotBeaten.Healthy
+  {
+	background: -webkit-linear-gradient(top, #493519 0%,#312311 100%) !important;
+  }
+
+  .battleCell.cellColorNotBeaten.Pumpkimp, #mapGrid ul li.battleCell.cellColorNotBeaten.mapPumpkimp
+  {
+	background: -webkit-linear-gradient(top, #F27900, #BF5F00) !important;
+  }
+
+  .battleCell.cellColorBeaten.Pumpkimp, #mapGrid ul li.battleCell.cellColorBeaten.mapPumpkimp
+  {
+	background: -webkit-linear-gradient(top, #BF8C00 0%, #8C6700 100%) !important;
+  }
+
+  .battleCell.cellColorOverkill.Pumpkimp, #mapGrid ul li.battleCell.cellColorOverkill.mapPumpkimp
+  {
+	background: -webkit-linear-gradient(top, #F2B200 0%, #BF8C00 100%) !important;
+  }
+
+  #row9 .battleCell.cellColorNotBeaten.Pumpkimp
+  {
+	background: -webkit-linear-gradient(top, #008000, #004D00) !important;
+  }
+
+  #row9 .battleCell.cellColorBeaten.Pumpkimp
+  {
+	background: -webkit-linear-gradient(top, #007300 0%, #005c00 100%) !important;
+  }
+
+  #row9 .battleCell.cellColorOverkill.Pumpkimp
+  {
+	background: -webkit-linear-gradient(top, #67CF00 0%,#4D9C00 100%) !important;
+  }
+
+  .battleCell.cellColorCurrent, .battleCell.empoweredCellIce.cellColorCurrent, .battleCell.empoweredCellPoison.cellColorCurrent, .battleCell.empoweredCellWind.cellColorCurrent, #mapGrid .battleCell.TrimpmasSnow.cellColorCurrent
+  {
+	background: -webkit-linear-gradient(top, #ffff00 0%,#b2b200 100%) !important;
+  }
+
+  .battleCell.cellColorNotBeaten.Pumpkimp.Corruption
+  {
+	background: -webkit-linear-gradient(top, #803345, #4D1E2A) !important;
+  }
+
+  .battleCell.cellColorNotBeaten.Pumpkimp.Healthy
+  {
+	background: -webkit-linear-gradient(top, #A65B0D, #733F09) !important;
+  }
+
+  .battleCell.cellColorNotBeaten.Pumpkimp.Magma
+  {
+	background: -webkit-linear-gradient(top, #BF2903, #8C1E03) !important;
+  }
+
+  .battleCell.cellColorBeaten.Pumpkimp.Healthy
+  {
+	background: -webkit-linear-gradient(top, #658567 0%, #476445 100%) !important;
+  }
+
+  .battleCell.cellColorOverkill.Pumpkimp.Healthy
+  {
+	background: -webkit-linear-gradient(top, #76A77D 0%, #58855A 100%) !important;
+  }
+
+  .battleCell.cellColorBeaten.Pumpkimp.Magma
+  {
+	background: -webkit-linear-gradient(top, #823100 0%, #5F1C00 100%) !important;
+  }
+
+  .battleCell.cellColorOverkill.Pumpkimp.Magma
+  {
+	background: -webkit-linear-gradient(top, #AC4100 0%, #8A2A00 100%) !important;
+  }
+
+  .battleCell.cellColorOverkill.Pumpkimp.Corruption
+  {
+	background: -webkit-linear-gradient(top, #AB7878 0%, #895F6B 100%) !important;
+  }
+
+  .battleCell.cellColorBeaten.Pumpkimp.Corruption
+  {
+	background: -webkit-linear-gradient(top, #A05080 0%, #7D3C66 100%) !important;
+  }
+  
+
+
+#grid.liquid ul#row8 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #F27900, #ec7600) !important;
+}
+#grid.liquid ul#row7 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #ec7600, #e77300) !important;
+}
+#grid.liquid ul#row6 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #e77300, #e17000) !important;
+}
+#grid.liquid ul#row5 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #e17000, #db6d00) !important;
+}
+#grid.liquid ul#row4 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #db6d00, #d66b00) !important;
+}
+#grid.liquid ul#row3 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #d66b00, #d06800) !important;
+}
+#grid.liquid ul#row2 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #d06800, #ca6500) !important;
+}
+#grid.liquid ul#row1 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #ca6500, #c56200) !important;
+}
+#grid.liquid ul#row0 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #c56200, #bf5f00) !important;
+}
+
+#grid.liquid ul#row8 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #BF2903, #B92803) !important;
+}
+#grid.liquid ul#row7 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #B92803, #B42703) !important;
+}
+#grid.liquid ul#row6 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #B42703, #AE2503) !important;
+}
+#grid.liquid ul#row5 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #AE2503, #A82403) !important;
+}
+#grid.liquid ul#row4 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #A82403, #A32303) !important;
+}
+#grid.liquid ul#row3 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #A32303, #9D2203) !important;
+}
+#grid.liquid ul#row2 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #9D2203, #972003) !important;
+}
+#grid.liquid ul#row1 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #972003, #921F03) !important;
+}
+#grid.liquid ul#row0 li.Pumpkimp.Magma {
+	background: -webkit-linear-gradient(top, #921F03, #8C1E03) !important;
+}
+
+#grid.liquid ul#row8 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #803345, #7a3142) !important;
+}
+#grid.liquid ul#row7 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #7a3142, #752e3f) !important;
+}
+#grid.liquid ul#row6 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #752e3f, #6f2c3c) !important;
+}
+#grid.liquid ul#row5 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #6f2c3c, #692a39) !important;
+}
+#grid.liquid ul#row4 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #692a39, #642736) !important;
+}
+#grid.liquid ul#row3 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #642736, #5e2533) !important;
+}
+#grid.liquid ul#row2 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #5e2533, #582533) !important;
+}
+#grid.liquid ul#row1 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #582533, #53202d) !important;
+}
+#grid.liquid ul#row0 li.Pumpkimp.Corruption {
+	background: -webkit-linear-gradient(top, #53202d, #4d1e2a) !important;
+}
+
+#grid.liquid ul#row8 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #a65b0d, #a0580d) !important;
+}
+#grid.liquid ul#row7 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #a0580d, #9b550c) !important;
+}
+#grid.liquid ul#row6 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #9b550c, #95520c) !important;
+}
+#grid.liquid ul#row5 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #95520c, #8f4f0b) !important;
+}
+#grid.liquid ul#row4 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #8f4f0b, #8a4b0b) !important;
+}
+#grid.liquid ul#row3 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #8a4b0b, #84480a) !important;
+}
+#grid.liquid ul#row2 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #84480a, #7e450a) !important;
+}
+#grid.liquid ul#row1 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #7e450a, #794209) !important;
+}
+#grid.liquid ul#row0 li.Pumpkimp.Healthy {
+	background: -webkit-linear-gradient(top, #794209, #733f09) !important;
+}
+
+#grid.liquid ul#row9 li.Magma {
+	background: -webkit-linear-gradient(top, #960000 0%,#930000 100%) !important;
+}
+#grid.liquid ul#row8 li.Magma {
+	background: -webkit-linear-gradient(top, #930000 0%,#910000 100%) !important;
+}
+#grid.liquid ul#row7 li.Magma {
+	background: -webkit-linear-gradient(top, #910000 0%,#8e0000 100%) !important;
+}
+#grid.liquid ul#row6 li.Magma {
+	background: -webkit-linear-gradient(top, #8e0000 0%,#8c0000 100%) !important;
+}
+#grid.liquid ul#row5 li.Magma {
+	background: -webkit-linear-gradient(top, #8c0000 0%,#890000 100%) !important;
+}
+#grid.liquid ul#row4 li.Magma {
+	background: -webkit-linear-gradient(top, #890000 0%,#860000 100%) !important;
+}
+#grid.liquid ul#row3 li.Magma {
+	background: -webkit-linear-gradient(top, #860000 0%,#840000 100%) !important;
+}
+#grid.liquid ul#row2 li.Magma {
+	background: -webkit-linear-gradient(top, #840000 0%,#810000 100%) !important;
+}
+#grid.liquid ul#row1 li.Magma {
+	background: -webkit-linear-gradient(top, #810000 0%,#7f0000 100%) !important;
+}
+#grid.liquid ul#row0 li.Magma {
+	background: -webkit-linear-gradient(top, #7f0000 0%,#7c0000 100%) !important;
+}
+
+#grid.liquid ul#row9 li.Corruption {
+    background: -webkit-linear-gradient(top, #33095b 0%,#310958 100%) !important;
+}
+#grid.liquid ul#row8 li.Corruption {
+    background: -webkit-linear-gradient(top, #310958 0%,#300855 100%) !important;
+}
+#grid.liquid ul#row7 li.Corruption {
+    background: -webkit-linear-gradient(top, #300855 0%,#2e0853 100%) !important;
+}
+#grid.liquid ul#row6 li.Corruption {
+    background: -webkit-linear-gradient(top, #2e0853 0%,#2d0850 100%) !important;
+}
+#grid.liquid ul#row5 li.Corruption {
+    background: -webkit-linear-gradient(top, #2d0850 0%,#2b084d 100%) !important;
+}
+#grid.liquid ul#row4 li.Corruption {
+    background: -webkit-linear-gradient(top, #2b084d 0%,#29074a 100%) !important;
+}
+#grid.liquid ul#row3 li.Corruption {
+    background: -webkit-linear-gradient(top, #29074a 0%,#280747 100%) !important;
+}
+#grid.liquid ul#row2 li.Corruption {
+    background: -webkit-linear-gradient(top, #280747 0%,#260745 100%) !important;
+}
+#grid.liquid ul#row1 li.Corruption {
+    background: -webkit-linear-gradient(top, #260745 0%,#250642 100%) !important;
+}
+#grid.liquid ul#row0 li.Corruption {
+    background: -webkit-linear-gradient(top, #250642 0%,#23063f 100%) !important;
+}
+
+#grid.liquid ul#row9 li.Healthy {
+    background: -webkit-linear-gradient(top, #493519 0%,#473318 100%) !important;
+}
+#grid.liquid ul#row8 li.Healthy {
+    background: -webkit-linear-gradient(top, #473318 0%,#443117 100%) !important;
+}
+#grid.liquid ul#row7 li.Healthy {
+    background: -webkit-linear-gradient(top, #443117 0%,#423017 100%) !important;
+}
+#grid.liquid ul#row6 li.Healthy {
+    background: -webkit-linear-gradient(top, #423017 0%,#3F2E16 100%) !important;
+}
+#grid.liquid ul#row5 li.Healthy {
+    background: -webkit-linear-gradient(top, #3F2E16 0%,#3D2C15 100%) !important;
+}
+#grid.liquid ul#row4 li.Healthy {
+    background: -webkit-linear-gradient(top, #3D2C15 0%,#3B2A14 100%) !important;
+}
+#grid.liquid ul#row3 li.Healthy {
+    background: -webkit-linear-gradient(top, #3B2A14 0%,#382813 100%) !important;
+}
+#grid.liquid ul#row2 li.Healthy {
+    background: -webkit-linear-gradient(top, #382813 0%,#362713 100%) !important;
+}
+#grid.liquid ul#row1 li.Healthy {
+    background: -webkit-linear-gradient(top, #362713 0%,#332512 100%) !important;
+}
+#grid.liquid ul#row0 li.Healthy {
+    background: -webkit-linear-gradient(top, #332512 0%,#312311 100%) !important;
+}
+
+#grid.liquid ul#row9 li.Pumpkimp {
+	background: -webkit-linear-gradient(top, #008000, #007a00) !important;
+}
+
+
+
+#grid.liquid ul#row9 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row8 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row7 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row6 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row5 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row4 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row3 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row2 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row1 li.battleCell.cellColorNotBeaten.Living,
+#grid.liquid ul#row0 li.battleCell.cellColorNotBeaten.Living {
+	background: black !important;
+}

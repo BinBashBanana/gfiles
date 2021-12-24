@@ -1,5 +1,9 @@
-# Games pages
+# Game files
 
-Gets files from cdn at [this](https://github.com/BinBashBanana/gstore) repository.
+Bundles some HTML5 games, flash games through ruffle (swfs are [here](https://github.com/BinBashBanana/gstore)), and [webretro](https://github.com/BinBashBanana/webretro).
 
-Compiled using the python script included.
+Indexed using the python script included.
+
+---
+
+This was forked from [LQ16's repository](https://github.com/LQ16/gfiles), which is long deleted.

@@ -1,0 +1,1153 @@
+#innerWrapper{
+	background: black !important;
+}
+#saveGame, .greenText {
+    color: #64A823
+}
+.NoticesMessage {
+    color: #AD2A2A;
+}
+
+#playFabLoginError{
+	color: #AD2A2A;
+}
+
+#battleSideTitle {
+    border: 1px solid #212121
+}
+
+.battleCell {
+    border: 1px solid #000;
+    color: #000;  
+}
+
+#grid,
+#mapGrid {
+    background: #5D5D5D;
+}
+
+.cellColorOverkill {
+    background-color:#3E4A19 !important;
+	color: black !important;
+}
+
+.voidBadge {
+    background-color: rgb(28, 5, 51) !important;
+}
+
+.trimpBadge{
+    background-color:#574800;
+}
+
+#fluffyBox {
+    border: none;
+    color: #b72cb7;
+    background-color: #2b112b;
+}
+
+.fluffyIcon {
+    text-shadow: -1px -1px 0 #b72cb7, 1px -1px 0 #b72cb7, -1px 1px 0 #b72cb7, 1px 1px 0 #b72cb7;
+}
+
+.red {
+    color: #AD2A2A;
+}
+
+.talentItem {
+    border-color: #5d5d5d;
+	    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.battleCell.TrimpmasSnow, .badge.TrimpmasSnow, .badge.CorruptSnow, .badge.HotSnow, .badNameMutation.TrimpmasSnow, .badNameMutation.CorruptSnow, .badNameMutation.HotSnow, .badNameMutation.Healthy{
+    color: #003a54;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(189, 255, 255, 0.6));
+}
+
+.battleCell.CorruptSnow {
+    color: #2E0854;
+   background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(221, 175, 255, 0.6));
+}
+
+.battleCell.HealthySnow{
+    color: #313D36;
+    background: linear-gradient(45deg, rgba(255,255,255,0.8), rgba(214, 214, 175, 0.6));
+}
+
+.battleCell.HotSnow {
+    color: #8c0000;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(253, 175, 175, 0.6));
+}
+.presimpt {
+    color: rgba(64, 220, 64, 0.88) !important;
+    background: rgba(220, 64, 64, 0.5);
+}
+
+.talentRowLocked .talentNotPurchased {
+    background-color: #3F3F3F;
+}
+
+.talentPurchased {
+    background-color: #194A19;
+}
+
+.talentRowUnlocked .talentNotPurchased.talentReqNeeded {
+    background-color: #441817;
+}
+
+.talentItem {
+    width: calc(16.666666667% + 1px);
+}
+
+#battleContainer {
+    border: 0px;
+    color: #C8C8C8
+}
+#logContainer {
+    border: 1px solid #212121;
+    padding-top: 0px;
+    color: #C8C8C8
+}
+.playerGather {
+    border: 0px;
+    color: #C8C8C8;
+    margin-bottom: 0px
+}
+
+#battleContainer,
+#outerBuyContainer,
+#logContainer,
+.playerGather,
+#queueContainer {
+    background: #000 none repeat scroll 0% 0%
+}
+.btn-default {
+	color: black;
+	border: 0px;
+    background-color: #5D5D5D;
+}
+.btn-info {
+    background-color: #283D44;
+}
+.btn-warning {
+    background-color: #574800;
+}
+.btn-primary {
+    background-color: #183854;
+}
+.btn-success {
+    background-color: #194A19;
+}
+.btn-danger {
+    background-color: #441817;
+}
+
+.warningColor,
+.colorWarning {
+    color: #C8C8C8;
+    background-color: #574800;
+}
+
+.btn-info,
+.btn-warning,
+.btn-primary,
+.btn-success,
+.btn-danger {
+	border: 0px;
+}
+
+.btn-group,
+.btn-group-vertical {
+    vertical-align: top
+}
+.exotic {
+    color: #d078d6 !important;
+    background: #202020 none repeat scroll 0% 0%
+}
+#food {
+    border: 1px solid #212121
+}
+#wood {
+    border: 1px solid #212121;
+    margin-left: -1px
+}
+#metal {
+    border: 1px solid #212121;
+    margin-top: -1px
+}
+#science {
+    border: 1px solid #212121;
+    margin-left: -1px;
+    margin-top: -1px
+}
+.resourceRow >:first-child {
+    padding-right: 0px;
+	width: 50%; 
+}
+.resourceRow >:nth-child(2) {
+    padding-left: 0px;
+	padding-right: 0px;
+	width: 50%; 
+}
+#fragments {
+    border: 1px solid #212121;
+    border-left: 1px solid #212121
+}
+#gems {
+    border: 1px solid #212121;
+    border-left: 1px solid #212121;
+    border-top: 1px solid #212121;
+    margin-top: -1px;
+    height: calc(33.3% + 1px)
+}
+#helium {
+    border: 1px solid #212121;
+    border-left: 1px solid #212121;
+    margin-top: -1px
+}
+#miscColumn {
+    padding-left: 0px;
+	margin-left: -2px;
+    padding-right: calc(0.75vw - 2px);
+}
+#buyCol {
+   padding-right: 0.5vw;   
+}
+.playerGatherSm {
+    height: 33.3%
+}
+#resourceColumn {
+    padding-right: 0px;
+	margin-left: 0; 
+    width: 33.33333333%;
+}
+#resourceColumn .row {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.psText {
+    color: #C8C8C8 !important
+}
+
+.progress {
+    background-color: #7E7E7E;
+    border-radius: 0px
+}
+#trapArea {
+    border: 1px solid #212121
+}
+.workBtn {
+    border: 1px solid #5D5D5D;
+}
+#queueContainer {
+    border: 1px solid #212121
+}
+
+.dangerColor, .colorDanger, .stateDanger {
+    background-color: #441817;
+}
+.successColor, .colorSuccess {
+    background-color: #194A19;
+}
+
+#outerBuyContainer {
+    border: 1px solid #212121;
+}
+.thing {
+    margin-left: -1px;
+    margin-right: 0px;
+    margin-top: -1px;
+    width: calc(25% + 1px);
+    border-color: #5D5D5D;
+}
+
+.thing5 {
+	width: 20%;
+	margin-left: 0;
+}
+
+#generatorWindow{
+	width: calc(100% + 1px);
+}
+
+/* Small Buttons */
+
+#buyHere.buttonSizeSmall div .buyBox .thing{
+	width: 19.8%;
+	margin-left: -1px;
+    margin-right: 0px;
+    margin-top: -1px;
+}
+
+#buyHere.buttonSizeSmall div .buyBox #GeneticistassistContainer{
+	width: 39.5%;
+}
+
+/* Tiny Buttons */
+
+#buyHere.buttonSizeTiny div .buyBox .thing{
+	width: 16.6666666%;
+	margin-left: -1px;
+    margin-right: 0px;
+    margin-top: -1px;
+}
+
+#buyHere.buttonSizeTiny div .buyBox #GeneticistassistContainer{
+	width: 33.2333333%;
+}
+
+
+#GeneticistassistContainer {
+     width: 50%;
+}
+
+#Geneticistassist.stateDisabled {
+    background-color:#441817;
+}
+
+.portalThing, .challengeThing{
+	width: 20%;
+}
+
+#gridContainer.col-xs-8{
+	padding-right: 0px;
+}
+
+#battleBtnsColumn {
+	padding-right: 0px;
+}
+
+.settingBtntrue:hover, .settingBtn1:hover {
+	color: #fff;
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+.settingBtnfalse:hover, .settingBtn0:hover {
+	color: #fff;
+	background-color: #D64541 ;
+	border-color: #ac2925;
+}
+
+.settingBtn2:hover {
+    color: #fff;
+    background-color: #ab7324;
+    border-color: #885b1c;
+}
+
+.infoColor{
+	background-color: #33616F;
+}
+
+#mapsHere{
+	padding-left: 1px;
+	padding-top: 1px;
+}
+
+.mapElementSelected {
+	border: 1px solid black;
+	-webkit-box-shadow: 0 0 0 0.2vw #002B3B inset;
+	   -moz-box-shadow: 0 0 0 0.2vw #002B3B inset;
+            box-shadow: 0 0 0 0.2vw #002B3B inset;
+}
+
+.mapElementNotSelected {
+	border: 1px solid black;
+	-webkit-box-shadow: 0 0 0 1px #000 inset;
+	   -moz-box-shadow: 0 0 0 1px #000 inset;
+            box-shadow: 0 0 0 1px #000 inset;
+}
+
+.thingColorCanNotAfford,
+.tabSelected,
+.perkColorOff {
+	background: #3F3F3F;
+}
+
+.perkColorMaxed {
+	background: #2F2F3F;
+}
+
+.portalThing.additive.perkColorOff {
+	background-color:#283628
+	}
+
+.thingColorFiringJob,
+.fireBtnFiring {
+	background: #441817;
+}
+
+.thingColorCanAfford,
+.fireBtnNotFiring,
+.tabNotSelected {
+	background: black;
+}
+
+.noRecycleDone {
+	background-color: #441817 !important;
+}
+
+.noRecycle {
+	background-color: #194A19 !important;
+}
+
+.goldMap {
+	background-color: #574800 !important;
+}
+
+.mapThing {
+	background-color: #3F3F3F;
+}
+
+.cellColorBeaten {
+	background: #194A19 !important;
+	color: black !important;
+}
+.battleCell.Pumpkimp{
+	background-color: #a65300;	
+}
+
+.pumpkimp{
+	color: #f2b600 !important;
+}
+
+.cellColorCurrent {
+	background: #574800 !important;
+	color: black !important;
+}
+
+.postSpire ul li.cellColorNotBeaten {
+	background: #5D5D5D;
+}
+
+.spire ul li.spireCell.cellColorNotBeaten{
+	background-color: #625D7D;
+}
+
+.brokenUpgrade {
+	color: #3B003B;
+}
+
+.tealColor {
+	background-color: #283D44 !important;
+}
+
+.tealColor:hover {
+	background-color: #318696 !important;
+}
+
+.buyTabsUl > li > a {
+	border: 1px solid #212121;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#portalTimer {
+	background-color: #121212;
+}
+
+.autosaving {
+	background-color: #194A19;
+}
+
+.notAutosaving {
+	background-color: #441817;
+}
+
+.settingBtntrue, .settingBtn1 {
+	background-color: #194A19;
+}
+.settingBtnfalse, .settingBtn0{
+	background-color: #441817;
+}
+.settingBtn2{
+	background-color: #574800;
+}
+
+#boneBoostsColumn,
+#boneImportsColumn,
+#boneMiscColumn {
+	background-color: #000;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-top:1px solid black;
+}
+
+.primaryColor, .colorPrimary {
+	background-color: #183854;
+}
+
+.boneBtnStateOn{
+	background-color: #183854;
+}
+
+#searchSettings{
+	color: white;
+}
+
+.workBtn.workColorOff:hover {
+ background-color: #202020;
+}
+
+.workBtn.primaryColor:hover, .colorPrimary.hoverColor:hover {
+ background-color: #286090;
+ color: #fff;
+}
+
+#achievementMainClose:hover,
+#heirloomsPopupBtns .icon-close:hover,
+.achievementBtnClose:hover {
+ color: #c9302c;
+}
+
+#achievementHelp:hover {
+ color: #5050F9;
+}
+
+#heirloomsPopupBtns .icon-archive:hover {
+ color: #d531d5;
+}
+
+.achievementBtnGo:hover {
+ color: #40c840;
+}
+
+#searchSettings:hover {
+ border-color: #838383;
+}
+
+.thingColorGoldenUpgrade {
+background-color:#574800;
+color: #C8C8C8 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n) {
+	background-color: #060606;
+}
+
+hr{
+	border-color: black;
+}
+
+input, button, select, textarea{
+	background-color: black;
+}
+
+.progress-bar {
+	background-color:#283D44;
+}
+
+.percentColorBlue {
+	background-color: #002B3B;
+}
+
+.percentColorYellow {
+	background-color: #574800;
+}
+
+.percentColorOrange {
+	background-color: #3F2600;
+}
+
+.percentColorRed {
+	background-color: #441817;
+}
+
+.boneBuyColumn {
+	border-color: #202020;
+}
+
+#settingsRow,
+#boneWrapper,
+.boneBuyColumn,
+.boneBuyDesc,
+.miscDesc,
+.table-striped > tbody > tr:nth-of-type(2n+1),
+#tooltipDiv,
+#tooltipDiv2,
+.progress {
+	background-color: #202020;
+}
+
+.queueItem {
+	border-color: #5D5D5D;
+}
+
+.autoUpgradeBtn {
+ border-color: #5D5D5D;
+}
+
+.autoUpgradeBtn.colorSuccess:hover {
+ background-color: #449d44;
+ color: #fff;
+}
+
+.autoUpgradeBtn.colorDanger:hover {
+ background-color: #c9302c;
+ color: #fff;
+}
+
+#queueItemsHere > :nth-child(1) {
+	border-color:#574800;
+}
+
+#mapLevelInput {
+ border-color: #838383;
+}
+
+.incrementBtn {
+ border-color: #5D5D5D;
+ background-color: black;
+ color: #C8C8C8;
+}
+
+.incrementBtn:hover {
+ background-color: #202020;
+}
+
+.autoUpgradeBtn.colorWarning:hover {
+ background-color: #ab7324;
+ color: #fff;
+}
+
+#tooltipDiv, #tooltipDiv2 {
+	border-color: #002B3B;
+}
+
+.boneBtn {
+ border-color: #202020;
+}
+
+#animationDiv{
+	background-color: #002B3B;
+}
+
+.advSelect {
+    color: #C8C8C8;
+}
+
+#grid,
+#mapGrid,
+.workBtn,
+#queueRow,
+#noQueue,
+#outerBuyContainer,
+.settingBtntrue, .settingBtn1,
+.settingBtnfalse, .settingBtn0,
+.settingBtn2,
+#boneWrapper,
+#tooltipDiv,
+#tooltipDiv2,
+input, button, select, textarea,
+#trimpsTimeToFill,
+#foodTimeToFill,
+#woodTimeToFill,
+#metalTimeToFill,
+.psColorWhite,
+#biomeAdvMapsSelect,
+#mapLevelInput,
+.thing,
+.badge,
+.dmgColorWhite,
+.formationBtn,
+.buyTabsUl > li > a,
+#numTabs > ul > li > a,
+.queueItem,
+.tealColor,
+#portalTimer,
+#specificChallengeDescription,
+#portalTabs *,
+#portalWrapper,
+#pastUpgradesBtn,
+.btn-info,
+.btn-warning,
+.btn-primary,
+.btn-success,
+.btn-danger,
+.dangerColor,
+.colorDanger,
+.successColor,
+.colorSuccess,
+.autosaving,
+.notAutosaving,
+.progress > div > span,
+.voidMessage,
+.voidBadge,
+#heirloomsPopupBtns {
+	color: #C8C8C8;
+}
+
+
+.voidMessage, .voidBadge, .voidCell.cellColorNotBeaten{
+	background-color: rgb(28, 5, 51);
+	color: #C8C8C8;
+}
+
+#voidMapsBtn:hover { background-color:#390E65;}
+
+.portalMkPreview,
+#chainHolder > span{
+	color: #C8C8C8 !important;
+}
+
+#portalTabs {
+	border-color:#212121;
+}
+
+#specificChallengeDescription {
+	background-color: black;
+}
+
+.formationBtn {
+	border-color: #5D5D5D;
+}
+
+.formationStateDisabled {
+	background-color: #000 !important;
+}
+
+.formationStateEnabled {
+	background-color: #194A19 !important;
+}
+
+.badge {
+	background-color: #202020;
+}
+
+.psColorOrange, .attackColorOrange, .hePhColorOrange {
+	color: #B9B416;
+}
+
+.StoryMessage {
+	color: #00bdbd;
+}
+
+.helium{
+	color: #00aaff;
+}
+
+#fireBtn{
+	border-color: #5D5D5D;
+}
+
+.dmgColorRed {
+	color: #691E1E;
+}
+
+.tabNotSelected:hover {
+	background-color:#202020;
+}
+
+#tab1Text:hover,
+#tab2Text:hover,
+#tab3Text:hover,
+#tab4Text:hover,
+#tab5Text:hover,
+#tab5Text2:hover{
+	border-color:#212121;
+}
+
+
+
+.nav-tabs.nav-justified > li > a{
+	border-bottom: 1px solid #212121;
+	
+}
+
+#portalTabs > *:hover{
+	background-color:#202020;
+}
+#portalTabs > * > *:hover {
+	border-color: #212121;
+	border-bottom: 0;
+}
+.shriekStateEnabled {
+	background-color: #194A19 !important;
+}
+
+.shriekStateDisabled {
+	background-color: #441817 !important;
+}
+
+#buyTabs > ul > li a {
+	border-bottom: 1px solid #212121;
+}
+
+#critSpan, #badCrit {
+color:#8F8F00
+}
+
+.turkimp {
+    background-color:rgba(39, 20, 0, 0.9);
+    color:#C06100;
+}
+
+#turkimpBuff {
+    background-color:rgba(39, 20, 0, 0.9);
+    color:#C06100;
+}
+
+.alert {
+ background-color: #003066;
+ box-shadow: 1px 1px 0 0 #C8C8C8 inset;
+}
+
+.challengeThing {
+	margin-left:0px;
+	margin-top: 0px;
+	border: 0;
+	color:#C8C8C8;
+	background-color: #283d44;
+}
+.challengeThing:hover {
+	background-color: #233237;
+}
+
+.challengeRepeatable{
+	background-color: #337ab7;
+	color: white;
+}
+
+.challengeRepeatable:hover{
+	background-color: #285f8f;
+}
+
+.finishedChallenge{
+	background-color:#5D5D5D
+}
+
+.finishedChallenge:hover { 
+	background-color: #515151;
+}
+
+.thingColorSquared {
+    background-color: #800080 !important;
+    color: inherit;
+}
+
+.thingColorSquared:hover {
+    background-color: #6e006e !important;
+    color: inherit;
+}
+
+#challengeDaily {
+    background-color: #936e00;
+}
+
+#challengeDaily:hover {
+    background-color: #7f5f00;
+}
+
+.alert{
+    padding: 1.5% 4.8%;
+}
+
+.shriekStateCooldown{
+	background-color: #202020 !important;
+}
+
+
+
+.importsTable > tbody > tr{background-color:#202020;}
+
+.importOwned{
+	background-color: #194A19 !important;
+}
+
+#trimpsTimeToFill,
+#foodTimeToFill,
+#woodTimeToFill,
+#metalTimeToFill,
+#trimpsTimeToFill,
+.innerFightBar,
+#portalTitle,
+#portalHelium,
+#portalTotalHelium,
+#portalTotalPortals,
+#portalStory,
+#challengeTitle,
+#challengeDescription
+ {
+	text-shadow:
+	 -1px -1px 0 #000,  
+	  1px -1px 0 #000,
+	 -1px 1px 0 #000,
+	  1px 1px 0 #000;
+}
+
+#determinedBuff{
+	color: #B9B416;
+}
+
+#heirloomsBtn {
+ background-color: #300E61;
+ border: 0;
+ color: #C8C8C8;
+}
+
+#heirloomsPopup{
+	border: 0.2vw solid rgb(0, 43, 59);
+}
+
+#heirloomsBtn:hover {
+ background-color: #5A4080;
+ border: 0;
+}
+
+.portalMk1 {
+	background-color: rgba(0, 128, 0, 0.4);
+}
+.portalMk2 {
+	background-color: rgba(0, 179, 134, 0.4);
+}
+.portalMk3 {
+	background-color: rgba(61, 176, 248, 0.4);
+}
+.portalMk4 {
+	background-color: rgba(42, 106, 147, 0.4);
+}
+.portalMk5 {
+	background:transparent repeating-radial-gradient(rgba(0, 179, 134, 0) 10%, rgba(61, 176, 248, 0.4) 10%, rgba(42, 106, 147, 0.4) 10%, rgba(27, 56, 75, 0.4) 20%) repeat scroll 0% 0%;
+}
+
+
+#portalError,
+#portalWrapper #flagMustRestart {
+	color: #AD2A2A;
+}
+
+.activatePortalBtn {
+    text-shadow:none;
+}
+
+#toggleusePlayFab.settingBtn0 {
+   background-color:#0A0A8C;
+}
+#toggleusePlayFab.settingBtn0:hover {
+   color:#fff;
+   border-color:#1D1D86;
+   background-color:#5050F9;
+}
+
+.iconStateBad {
+    color: #AD2A2A;
+}
+
+#talentRespecBtn {
+    border-color: #5D5D5D;
+}
+
+#talentRespecBtn.colorDanger:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+.fireBtnFiring:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+
+.fireBtnNotFiring:hover {
+    background-color: #202020;
+}
+
+.thingColorFiringJob.thing.jobThing:hover {
+    background-color: #612221;
+}
+
+/* Delete below if hated */
+.thing.thingColorCanAfford:hover {
+ background-color: #202020;
+}
+
+.thing.thingColorGoldenUpgrade:hover {
+ background-color: #685700;
+}
+.talentRowUnlocked .talentItem.talentNotPurchased:hover:not(.talentReqNeeded):hover {
+ background-color: #202020;
+}
+
+#buyBox {
+    background: white !important;
+}
+.mapElementNotSelected.mapThing:hover {
+ background-color: #565656;
+}
+
+.noRecycle.mapElementNotSelected.mapThing:hover {
+ background-color:#226322 !important;
+}
+
+.noRecycleDone.mapElementNotSelected.mapThing:hover {
+ background-color:#612221 !important;
+}
+
+.goldMap.mapElementNotSelected.mapThing:hover {
+ background-color:#776200 !important;
+}
+
+.workBtn.infoColor:hover {
+    background-color: #447f91;
+    color: white;
+}
+
+.workBtn.dangerColor:hover {
+    background-color: #672523;
+    color: #fff;
+}
+
+#generatorUpgradeDescription {
+    background-color: #000000;
+    color: #C8C8C8;
+}
+ 
+#magmiteCost {
+    border: 1px solid #5D5D5D;
+}
+ 
+#tipCost b {
+    color: #AD2A2A !important;
+}
+ 
+#generatorUpgradeTitle {
+    color: #5b5bf6;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+ 
+#magmiteOwned {
+    color: #b40000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.redText{
+	color: #AD2A2A !important;
+}
+
+.liquid ul li {
+    background: #574800;
+}
+
+.LiquimpMessage {
+    background-color: rgba(90, 90, 223, 0.42) !important;
+}
+
+.battleCell.cellColorNotBeaten.Living, .battleCell.cellColorBeaten.Living, .badge.Living, .badNameMutation.Living{
+	background-color: black !important;
+	color: white !important;
+}
+
+.badNameMutation.Healthy, .badge.Healthy, .battleCell.Healthy, .message.Healthy{
+	background: initial;
+	background-color: #3D2C15;
+	color: white;
+}
+
+.badNameMutation.Corruption{
+	background: initial;
+	background-color: #2f006d;
+	color: white;
+}
+
+.battleCell.Corruption, .badge.Corruption{
+	background: initial;
+	background-color: #2E0854;
+	color: #DDDDFF;
+}
+
+.battleCell.Magma, .badge.Magma, .badNameMutation.Magma, .message.Magma {
+	background: initial;
+	background-color: #8c0000;
+	color: #FFDDDD;
+}
+
+.permGenUpgrade {
+	width: calc(33.33333333% + 1px);
+}
+
+#lootBdBtn{
+	color: #1e4c74;
+	text-shadow:
+	-1px -1px 0 #b8b8b8,  
+		1px -1px 0 #969696,
+	-1px 1px 0 #969696,
+		1px 1px 0 #969696;
+	font-size: 1.6vw;
+}
+
+#lootBdBtn:hover{
+	color: #173753;
+	text-shadow:
+	-1px -1px 0 #969696,  
+		1px -1px 0 #969696,
+	-1px 1px 0 #969696,
+		1px 1px 0 #969696;
+}
+
+#playerSpireSpirePanel{
+	border: 2px solid #c8c8c8;
+}
+
+#playerSpireInfoPanel{
+	color: #c8c8c8;
+}
+
+#playerSpireSmallPanel{
+	color: #c8c8c8;
+}
+
+.playerSpireCell{
+	border: 1px solid #c8c8c8;
+}
+
+.playerSpireEnemy{
+	color: #c8c8c8;
+}
+
+.spireTrapBox{
+	border: 2px solid #c8c8c8;
+}
+
+.spireTrapBoxSmall{
+	border: 2px solid #c8c8c8;
+}
+
+#playerSpireTab a{
+	background-color: #5a4603;
+}
+
+#energyShield {
+    background: linear-gradient(0deg, rgb(84, 41, 202) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 70%, rgb(84, 41, 202) 100%);
+}
+
+.alchemyPopupCraft.brew{
+	background-color: #182436;
+}
+
+.alchemyPopupCraft.potion{
+	background-color: #2d2e1d;
+}
+
+.alchemyCraftCost{
+	background-color: rgba(82, 82, 82, 0.5);
+}
+
+.autoRingSelect{
+	color: #C8C8C8;
+}
+
+.equalityTabScalingOff a{
+	background-color: #35341c !important;
+}
+.equalityTabScalingOff a:hover{
+	background-color: #222113 !important;
+}
+
+.equalityTabScalingOn a{
+	background-color: #1a1d3a !important;
+}
+.equalityTabScalingOn a:hover{
+	background-color: #0a0b18 !important;
+}
