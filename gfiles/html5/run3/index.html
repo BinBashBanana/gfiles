@@ -12,7 +12,10 @@
 	
 	<link rel="shortcut icon" type="image/png" href="./favicon.png">
 	
-	<script type="text/javascript" src="./Run3.js?26274"></script>
+	<script type="text/javascript">
+		Object.defineProperty(Document.prototype, "domain", {get: function() { return "player03.com"; }});
+	</script>
+	<script type="text/javascript" src="./Run3.js"></script>
 	
 	<script>
 		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
@@ -53,7 +56,7 @@
 		}
 
 	</style>
-	
+
 </head>
 <body>
 	
@@ -62,7 +65,7 @@
 	<div id="openfl-content"></div>
 	
 	<script type="text/javascript">
-		lime.embed ("Run3", "openfl-content", screen.width, screen.height, { parameters: {} });
+		lime.embed ("Run3", "openfl-content", 800, 600, { parameters: {} });
 	</script>
 	
 </body>
