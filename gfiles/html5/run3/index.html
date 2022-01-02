@@ -14,6 +14,20 @@
 	
 	<script type="text/javascript">
 		Object.defineProperty(Document.prototype, "domain", {get: function() { return "player03.com"; }});
+		window.gLocalStorage = {
+			setItem: function(key, value) {
+				console.log("%cset...", "color: #8888ff", key, value);
+				return window.localStorage.setItem(key, value);
+			},
+			getItem: function(key) {
+				console.log("%cget...", "color: #88ff88", key);
+				return window.localStorage.getItem(key);
+			},
+			removeItem: function(key) {
+				console.log("%cremove", "color: #ff8888", key);
+				return window.localStorage.removeItem(key);
+			}
+		};
 	</script>
 	<script type="text/javascript" src="./Run3.js"></script>
 	
