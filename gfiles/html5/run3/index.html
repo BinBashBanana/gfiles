@@ -21,12 +21,19 @@
 			},
 			getItem: function(key) {
 				console.log("%cget...", "color: #88ff88", key);
+				// if (key.includes("http")) console.trace(key);
 				return window.localStorage.getItem(key);
 			},
 			removeItem: function(key) {
 				console.log("%cremove", "color: #ff8888", key);
 				return window.localStorage.removeItem(key);
 			}
+		};
+		window.gLocation = {
+			hostname: "player03.com",
+			pathname: "/run3/",
+			href: window.location.protocol + "//player03.com/run3/",
+			protocol: window.location.protocol
 		};
 	</script>
 	<script type="text/javascript" src="./Run3.js"></script>
