@@ -9,7 +9,7 @@ banned = [] #[".php", ".asp"]
 infile = sys.argv[1]
 outdir = sys.argv[2]
 
-input = open(infile, "r").read().splitlines()
+input = open(infile, "r", encoding="utf-8").read().splitlines()
 
 lis2 = []
 for x in input:
@@ -18,6 +18,6 @@ for x in input:
 
 lis2 = list(dict.fromkeys(lis2))
 
-open("./wgettemp.txt", "w").write("\n".join(lis2))
+open("./wgettemp.txt", "w", encoding="utf-8").write("\n".join(lis2))
 subprocess.call("wget -x -i ./wgettemp.txt -P %s" % outdir, shell=True)
 os.remove("./wgettemp.txt")
