@@ -1,0 +1,86 @@
+#button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid #333;
+    margin: 2px
+}
+
+#button:hover,
+#button:focus {
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    color: #333;
+}
+
+#button:active {
+    border: 4px solid #333;
+    color: #333;
+}
+
+#link {
+    background-color: rgb(255, 255, 255);
+    color: rgb(122, 122, 122);
+    border: 0px solid rgb(255, 255, 255);
+}
+
+#link:hover,
+#link:focus {
+    text-decoration: underline;
+}
+
+#link:active {
+    color: #333;
+}
+
+#textbox {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: inset 4px 4px rgba(0, 0, 0, 0.1);
+    border: 4px solid #000;
+}
+
+#textbox:hover {
+    box-shadow: inset 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#textbox:focus,
+#link:focus,
+#button:focus {
+    outline: none;
+}
+
+#check {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    padding-left: 25px;
+    background-image: url("check.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: no-repeat;
+    height: 1em;
+    display: inline-block;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 25px;
+    vertical-align: middle;
+    background-size: 100% 200%;
+}
+
+#check:hover,
+#check:focus {
+    color: rgb(122, 122, 122);
+    text-decoration: underline;
+}
+
+#check:checked {
+    background-position: 0 100%;
+}

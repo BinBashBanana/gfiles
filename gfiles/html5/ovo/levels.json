@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Basics",
+    "lang": "basics",
+    "textScale": 1,
+    "levels": [1, 8]
+  },
+  {
+    "name": "Getting serious",
+    "lang": "gettingserious",
+    "textScale": 1,
+    "levels": [9, 16]
+  },
+  {
+    "name": "Higher order",
+    "lang": "higherorder",
+    "textScale": 1,
+    "levels": [17, 24]
+  },
+  {
+    "name": "Mechanics",
+    "lang": "mechanicis",
+    "textScale": 1,
+    "levels": [25, 32]
+  },
+  {
+    "name": "OvO Space Program",
+    "lang": "ovospaceprogram",
+    "textScale": 1,
+    "levels": [33, 40]
+  },
+  {
+    "name": "Journey through the portal",
+    "lang": "jttp",
+    "textScale": 0.8,
+    "levels": [41, 48]
+  },
+  {
+    "name": "Community levels",
+    "lang": "community",
+    "textScale": 1,
+    "levels": [49, 52]
+  }
+]

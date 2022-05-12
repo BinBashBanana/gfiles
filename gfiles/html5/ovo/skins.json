@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Default",
+    "hidden": false,
+    "icon": "default.png",
+    "skin": "",
+    "lang": "default",
+    "price": 0,
+    "achievement": -1
+  },
+  {
+    "name": "Electrical",
+    "hidden": false,
+    "icon": "electrical.png",
+    "skin": "elec",
+    "lang": "electrical",
+    "price": -1,
+    "achievement": 6
+  },
+  {
+    "name": "Pole",
+    "hidden": false,
+    "icon": "pole.png",
+    "skin": "pole",
+    "lang": "pole",
+    "price": 30,
+    "achievement": -1
+  },
+  {
+    "name": "Pink Guy",
+    "hidden": false,
+    "icon": "frank.png",
+    "skin": "frank",
+    "lang": "pinkguy",
+    "price": 20,
+    "achievement": -1
+  },
+  {
+    "name": "OvO+",
+    "hidden": true,
+    "icon": "ovoplus.png",
+    "skin": "ovo+",
+    "lang": "ovoplus",
+    "price": -1,
+    "achievement": 5
+  },
+  {
+    "name": "Knight",
+    "hidden": false,
+    "icon": "knight.png",
+    "skin": "knight",
+    "lang": "knight",
+    "price": 40,
+    "achievement": -1
+  },
+  {
+    "name": "Dark Knight",
+    "hidden": false,
+    "icon": "dknight.png",
+    "skin": "dknight",
+    "lang": "dknight",
+    "price": 60,
+    "achievement": -1
+  },
+  {
+    "name": "Light Knight",
+    "hidden": false,
+    "icon": "lknight.png",
+    "skin": "lknight",
+    "lang": "lknight",
+    "price": -1,
+    "achievement": 15
+  },
+  {
+    "name": "Astronaut",
+    "hidden": true,
+    "icon": "astronaut.png",
+    "skin": "astronaut",
+    "lang": "astronaut",
+    "price": -1,
+    "achievement": 7
+  },
+  {
+    "name": "Alien",
+    "hidden": false,
+    "icon": "alien.png",
+    "skin": "alien",
+    "lang": "alien",
+    "price": 70,
+    "achievement": -1
+  },
+  {
+    "name": "Erigato",
+    "hidden": false,
+    "icon": "erigato.png",
+    "skin": "erigato",
+    "lang": "erigato",
+    "price": 50,
+    "achievement": -1
+  },
+  {
+    "name": "Batter",
+    "hidden": true,
+    "icon": "batter.png",
+    "skin": "batter",
+    "lang": "batter",
+    "price": -1,
+    "achievement": 10
+  },
+  {
+    "name": "Adalich",
+    "hidden": false,
+    "icon": "ada.png",
+    "skin": "ada",
+    "lang": "adalich",
+    "price": 0,
+    "achievement": -1
+  },
+  {
+    "name": "The Fallen",
+    "hidden": true,
+    "icon": "thefall.png",
+    "skin": "thefall",
+    "lang": "fallen",
+    "price": -1,
+    "achievement": 20
+  },
+  {
+    "name": "Pulse",
+    "hidden": false,
+    "icon": "pulse.png",
+    "skin": "pulse",
+    "lang": "pulse",
+    "price": -1,
+    "achievement": 8
+  },
+  {
+    "name": "MaterWelon",
+    "hidden": false,
+    "icon": "materwelon.png",
+    "skin": "materwelon",
+    "lang": "materwelon",
+    "price": -1,
+    "achievement": 9
+  },
+  {
+    "name": "Fl1ckd",
+    "hidden": false,
+    "icon": "fl1ckd.png",
+    "skin": "fl1ckd",
+    "lang": "flickd",
+    "price": 50,
+    "achievement": -1
+  },
+  {
+    "name": "TheLilJoker",
+    "hidden": false,
+    "icon": "theliljoker.png",
+    "skin": "theliljoker",
+    "lang": "theliljoker",
+    "price": 50,
+    "achievement": -1
+  }
+]
