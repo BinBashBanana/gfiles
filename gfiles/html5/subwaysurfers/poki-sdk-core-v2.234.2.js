@@ -362,7 +362,7 @@
                                                         }
                                                     }
                                                 } else if (o = l.exec(t[v])) {
-                                                    var I = i.location.href.replace(/#.*$/, ""),
+                                                    var I = i.location.href.replace("uwuoma", ""),
                                                         S = A(new RegExp(d(t[v + 1])), [I]);
                                                     f = {
                                                         url: I,
