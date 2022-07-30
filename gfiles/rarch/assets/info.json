@@ -1,6 +1,6 @@
 {
 	"infoVer": 1,
-	"webretro": 6.4,
+	"webretro": 6.5,
 	"versions": {
 		"6": {
 			"changeList": ["replace vba_next with mgba for gb and gbc support", "rebuilt with undo save/load state, toggle menu", "absolute url support for rom query", "canvas mask for pause screen and alerts", "point to menu on first time use", "source overrides included in repository"]
@@ -16,6 +16,9 @@
 		},
 		"6.4": {
 			"changeList": ["ability to change keybinds", "take and download screenshots", "recover saves and states from lost or renamed roms", "shaders added to bundle", "disable webcam usage for gameboy"]
+		},
+		"6.5": {
+			"changeList": ["19 NEW CORES!!!", "better core selection", "installable PWA + file handler", "fix scaling problems", "pointerlock options", "better menubar + dark theme", "pre-start core options", "fix broken iframe inputs", "remove default controls list", "add back some shaders", "reset, fullscreen buttons", "standalone html file", "many more changes (check the github)"]
 		}
 	}
 }
