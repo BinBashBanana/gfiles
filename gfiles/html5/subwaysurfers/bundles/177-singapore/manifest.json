@@ -1,0 +1,125 @@
+{
+    "default": {
+        "image": {},
+        "fonts": {},
+        "audio": {},
+        "model": {},
+        "json": {},
+        "atlas": {},
+        "animate": {},
+        "misc": {}
+    },
+    "audio-basic": {
+        "image": {},
+        "fonts": {},
+        "audio": {
+            "audio-basic/theme.wav": {
+                "shortcut": "theme.wav",
+                "mp3": "audio-basic/theme.mp3",
+                "ogg": "audio-basic/theme.ogg"
+            }
+        },
+        "model": {},
+        "json": {},
+        "atlas": {},
+        "animate": {},
+        "misc": {}
+    },
+    "game-basic": {
+        "image": {},
+        "fonts": {},
+        "audio": {},
+        "model": {
+            "game-basic/environment-basic.fbx": {
+                "shortcut": "environment-basic.fbx",
+                "default": "game-basic/environment-basic.gb"
+            },
+            "game-basic/trains-basic.fbx": {
+                "shortcut": "trains-basic.fbx",
+                "default": "game-basic/trains-basic.gb"
+            }
+        },
+        "json": {},
+        "atlas": {},
+        "animate": {},
+        "misc": {}
+    },
+    "game-full": {
+        "image": {},
+        "fonts": {},
+        "audio": {},
+        "model": {
+            "game-full/environment-full.fbx": {
+                "shortcut": "environment-full.fbx",
+                "default": "game-full/environment-full.gb"
+            },
+            "game-full/trains-full.fbx": {
+                "shortcut": "trains-full.fbx",
+                "default": "game-full/trains-full.gb"
+            }
+        },
+        "json": {},
+        "atlas": {},
+        "animate": {},
+        "misc": {}
+    },
+    "game-idle": {
+        "image": {
+            "game-idle/environment-tex.png": {
+                "shortcut": "environment-tex.png",
+                "webp": {
+                    "high": "game-idle/environment-tex@2x.webp",
+                    "default": "game-idle/environment-tex.webp",
+                    "low": "game-idle/environment-tex@0.5x.webp"
+                },
+                "standard": {
+                    "high": "game-idle/environment-tex@2x.png",
+                    "default": "game-idle/environment-tex.png",
+                    "low": "game-idle/environment-tex@0.5x.png"
+                }
+            },
+            "game-idle/train-start.png": {
+                "shortcut": "train-start.png",
+                "webp": {
+                    "high": "game-idle/train-start@2x.webp",
+                    "default": "game-idle/train-start.webp",
+                    "low": "game-idle/train-start@0.5x.webp"
+                },
+                "standard": {
+                    "high": "game-idle/train-start@2x.png",
+                    "default": "game-idle/train-start.png",
+                    "low": "game-idle/train-start@0.5x.png"
+                }
+            },
+            "game-idle/trains-tex.png": {
+                "shortcut": "trains-tex.png",
+                "webp": {
+                    "high": "game-idle/trains-tex@2x.webp",
+                    "default": "game-idle/trains-tex.webp",
+                    "low": "game-idle/trains-tex@0.5x.webp"
+                },
+                "standard": {
+                    "high": "game-idle/trains-tex@2x.png",
+                    "default": "game-idle/trains-tex.png",
+                    "low": "game-idle/trains-tex@0.5x.png"
+                }
+            }
+        },
+        "fonts": {},
+        "audio": {},
+        "model": {
+            "game-idle/environment-idle.fbx": {
+                "shortcut": "environment-idle.fbx",
+                "default": "game-idle/environment-idle.gb"
+            },
+            "game-idle/trains-idle.fbx": {
+                "shortcut": "trains-idle.fbx",
+                "default": "game-idle/trains-idle.gb"
+            }
+        },
+        "json": {},
+        "atlas": {},
+        "animate": {},
+        "misc": {}
+    }
+}

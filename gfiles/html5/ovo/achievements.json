@@ -1,0 +1,222 @@
+[
+  {
+    "name": "OvO",
+    "description": "What's this?",
+    "hidden": false,
+    "icon": "ovo.png",
+    "callback": "Skins > Gold",
+    "params": "5,achievements,0",
+    "divider": ",",
+    "type": "n,s,n"
+  },
+  {
+    "name": "Hittin da head",
+    "description": "Stop it please",
+    "hidden": true,
+    "icon": "ovo2.png",
+    "callback": "Skins > Gold",
+    "params": "10,achievements,1",
+    "divider": ",",
+    "type": "n,s,n"
+  },
+  {
+    "name": "Hurtin da head",
+    "description": ":(",
+    "hidden": true,
+    "icon": "ovo3.png",
+    "callback": "Skins > Gold",
+    "params": "20,achievements,2",
+    "divider": ",",
+    "type": "n,s,n"
+  },
+  {
+    "name": "Tutorials",
+    "description": "Finish the tutorial section",
+    "hidden": false,
+    "icon": "tutorials.png",
+    "callback": "Skins > Gold",
+    "params": "5,achievements,3",
+    "divider": ",",
+    "type": "n,s,n"
+  },
+  {
+    "name": "Getting Serious",
+    "description": "Finish the getting serious section",
+    "hidden": false,
+    "icon": "gettingserious.png",
+    "callback": "Skins > Gold",
+    "params": "5,achievements,3",
+    "divider": ",",
+    "type": "n,s,n"
+  },
+  {
+    "name": "Higher Order",
+    "description": "Finish the higher order section",
+    "hidden": false,
+    "icon": "higherorder.png",
+    "callback": "Skins > Unlock",
+    "params": "4",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Mechanics",
+    "description": "Finish the mechanics section",
+    "hidden": false,
+    "icon": "mechanics.png",
+    "callback": "Skins > Unlock",
+    "params": "1",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "OvO Space Program",
+    "description": "Finish the OvO Space Program section",
+    "hidden": false,
+    "icon": "ovospaceprogram.png",
+    "callback": "Skins > Unlock",
+    "params": "8",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "A mystical journey",
+    "description": "Finish the Journey through the portal section",
+    "hidden": false,
+    "icon": "jttp.png",
+    "callback": "Skins > Unlock",
+    "params": "14",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Community Work",
+    "description": "Finish the Community levels",
+    "hidden": false,
+    "icon": "community.png",
+    "callback": "Skins > Unlock",
+    "params": "15",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Purified",
+    "description": "Finish every level",
+    "hidden": false,
+    "icon": "purified.png",
+    "callback": "Skins > Unlock",
+    "params": "11",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Coins!",
+    "description": "Collect a coin",
+    "hidden": false,
+    "icon": "coin.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": ""
+  },
+  {
+    "name": "Coin enthusiast",
+    "description": "Collect 5 coins",
+    "hidden": false,
+    "icon": "coin5.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": ""
+  },
+  {
+    "name": "Coin connoisseur",
+    "description": "Collect 10 coins",
+    "hidden": false,
+    "icon": "coin10.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": ""
+  },
+  {
+    "name": "Coin hunter",
+    "description": "Collect 30 coins",
+    "hidden": false,
+    "icon": "coin30.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Coin god",
+    "description": "Collect 40 coins",
+    "hidden": false,
+    "icon": "coin40.png",
+    "callback": "Skins > Unlock",
+    "params": "7",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Secret Coin",
+    "description": "Collect the secret coin",
+    "hidden": true,
+    "icon": "coinsecret.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Runner",
+    "description": "Finish OvO in less than 30mn",
+    "hidden": false,
+    "icon": "runner.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Speedrunner",
+    "description": "Finish OvO in less than 20mn",
+    "hidden": false,
+    "icon": "speedrunner.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Velocity master",
+    "description": "Finish OvO in less than 15mn",
+    "hidden": false,
+    "icon": "velocity.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Top charts",
+    "description": "Finish OvO in less than 12mn",
+    "hidden": false,
+    "icon": "topcharts.png",
+    "callback": "Skins > Unlock",
+    "params": "13",
+    "divider": ",",
+    "type": "n"
+  },
+  {
+    "name": "Light speed",
+    "description": "Finish OvO in less than 10mn",
+    "hidden": false,
+    "icon": "lightspeed.png",
+    "callback": "",
+    "params": "",
+    "divider": ",",
+    "type": "n"
+  }
+]
