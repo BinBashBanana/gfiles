@@ -1,0 +1,11 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "death_run_wasm_v1.data.unityweb",
+"wasmCodeUrl": "death_run_wasm_v1.wasm.code.unityweb",
+"wasmFrameworkUrl": "death_run_wasm_v1.wasm.framework.unityweb",
+"asmCodeUrl": "death_run_wasm_v1.asm.code.unityweb",
+"asmMemoryUrl": "death_run_wasm_v1.asm.memory.unityweb",
+"asmFrameworkUrl": "death_run_wasm_v1.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
