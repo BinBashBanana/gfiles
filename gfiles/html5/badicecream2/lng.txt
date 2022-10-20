@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unblocked Games - Free online games for school</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Welcome to Unblocked Games website. We have a huge collection of free unblocked games for play at school and work. Let's play and have fun!">
+    <meta name="keywords" content="unblocked games, free unblocked games, unblocked games 66, unblocked games 76, unblocked games for school, fun unblocked games, best unblocked games, unblocked, games unblocked, funblocked">
+    <meta property="og:url" content="https://unblockeds-games.com">
+    <meta property="og:title" content="Unblocked Games - Free online games for school">
+    <meta property="og:description" content="Welcome to Unblocked Games website. We have a huge collection of free unblocked games for play at school and work. Let's play and have fun!">
+    <meta property="og:image" content="https://unblockeds-games.com/style/main_pic.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css?13">
+    <link rel="stylesheet" href="/style/star-rating-svg.css">
+    <link rel="shortcut icon" href="/style/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://unblockeds-games.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/app.js?7"></script>
+    <script src="/js/jquery.star-rating-svg.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/esm/popper.min.js"></script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c8b61df200ac0001700c09d&product=sticky-share-buttons' async='async'></script>
+</head>
+<body>
+<div class="wrapper mx-auto">
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col text-center">
+                <a href="/">
+                    <img src="/style/logo5.png" alt="unblocked games" class="img-fluid" width="900px" height="150px" id="logo">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-center mx-auto">
+                            <li class="nav-item nav-custom">
+                  <a class="nav-link" href="/" title="Home">Home</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/action" title="Action Games">Action</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/arcade" title="Arcade Games">Arcade</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/io-games" title="IO Games">IO</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/multiplayer" title="Multiplayer Games">Multiplayer</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/racing" title="Racing Games">Racing</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/adventure" title="Adventure Games">Adventure</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/defense" title="Defense Games">Defense</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/sports" title="Sports Games">Sports</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/logic" title="Logic Games">Logic</a>
+              </li><li class="nav-item nav-custom">
+                  <a class="nav-link" href="/other" title="Other Games">Other</a>
+              </li><li class="nav-item nav-custom dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Collections
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="/fnf" title="[FNF] Friday Night Funkin Mods">[FNF] Friday Night Funkin Mods</a><a class="dropdown-item" href="/unblocked-games-76" title="Unblocked Games 76">Unblocked Games 76</a><a class="dropdown-item" href="/unblocked-games-66" title="Unblocked Games 66">Unblocked Games 66</a><a class="dropdown-item" href="/unblocked-games-wtf" title="Unblocked Games WTF">Unblocked Games WTF</a><a class="dropdown-item" href="/unblocked-games-911" title="Unblocked Games 911">Unblocked Games 911</a><a class="dropdown-item" href="/unblocked-games-mom" title="Unblocked Games MOM">Unblocked Games MOM</a><a class="dropdown-item" href="/unblocked-games-99" title="Unblocked Games 99">Unblocked Games 99</a><a class="dropdown-item" href="/unblocked-games-67" title="Unblocked Games 67">Unblocked Games 67</a><a class="dropdown-item" href="/unblocked-games-119" title="Unblocked Games 119">Unblocked Games 119</a><a class="dropdown-item" href="/tyrone-unblocked-games" title="Tyrone's Unblocked Games">Tyrone's Unblocked Games</a></div>
+            </li>                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <form action="/search" class="form-inline my-2 my-lg-0 justify-content-center" method="get">
+             <input class="search-form form-control mr-sm-2" type="search" placeholder="Find game..." aria-label="Search" name="s">
+            <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>            </div>
+        </div>
+        <div class="row main-bg-color rounded">
+            <div class="col p-3">
+                <h1 class="text-center my-2">Welcome to the home of unblocked games!</h1>
+                <p class="text-center">Hi there! On our website you can play the most popular and fun unblocked games at school or at work. Bookmark us and play cool online games anytime, anywhere!</p>
+                <div class="sharethis-inline-share-buttons"></div>
+                <h2 class="text-center my-2">New Unblocked Games</h2>
+                <div class="d-flex flex-wrap align-self-start justify-content-center mt-4">
+                    <div class="game-list-item mb-2 text-center">
+                        <a href="/stick-duel-revenge" title="Stick Duel Revenge" class="text-light">
+                            <img src="/images/stick-duel-revenge.jpg" class="game-img rounded" alt="Stick Duel Revenge">
+                            <div class="game-name text-center mt-2">
+                                Stick Duel Revenge
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/snow-drift" title="Snow Drift" class="text-light">
+                            <img src="/images/snow-drift.jpg" class="game-img rounded" alt="Snow Drift">
+                            <div class="game-name text-center mt-2">
+                                Snow Drift
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/stick-archers-battle" title="Stick Archers Battle" class="text-light">
+                            <img src="/images/stick-archers-battle.jpg" class="game-img rounded" alt="Stick Archers Battle">
+                            <div class="game-name text-center mt-2">
+                                Stick Archers Battle
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/the-little-giant" title="The Little Giant" class="text-light">
+                            <img src="/images/the-little-giant.jpg" class="game-img rounded" alt="The Little Giant">
+                            <div class="game-name text-center mt-2">
+                                The Little Giant
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/minecraft-skyblock" title="Minecraft Skyblock" class="text-light">
+                            <img src="/images/minecraft-skyblock.jpg" class="game-img rounded" alt="Minecraft Skyblock">
+                            <div class="game-name text-center mt-2">
+                                Minecraft Skyblock
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/4th-and-goal-2022" title="4th and Goal 2022" class="text-light">
+                            <img src="/images/4th-and-goal-2022.jpg" class="game-img rounded" alt="4th and Goal 2022">
+                            <div class="game-name text-center mt-2">
+                                4th and Goal 2022
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/unicycle-hero" title="Unicycle Hero" class="text-light">
+                            <img src="/images/unicycle-hero.jpg" class="game-img rounded" alt="Unicycle Hero">
+                            <div class="game-name text-center mt-2">
+                                Unicycle Hero
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/stickman-epic-battle" title="Stickman Epic Battle" class="text-light">
+                            <img src="/images/stickman-epic-battle.jpg" class="game-img rounded" alt="Stickman Epic Battle">
+                            <div class="game-name text-center mt-2">
+                                Stickman Epic Battle
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/skiing-fred" title="Skiing Fred" class="text-light">
+                            <img src="/images/skiing-fred.jpg" class="game-img rounded" alt="Skiing Fred">
+                            <div class="game-name text-center mt-2">
+                                Skiing Fred
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/blockpost" title="Blockpost" class="text-light">
+                            <img src="/images/blockpost.jpg" class="game-img rounded" alt="Blockpost">
+                            <div class="game-name text-center mt-2">
+                                Blockpost
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/poppy-playtime" title="Poppy Playtime" class="text-light">
+                            <img src="/images/poppy-playtime.jpg" class="game-img rounded" alt="Poppy Playtime">
+                            <div class="game-name text-center mt-2">
+                                Poppy Playtime
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/stickman-dismount" title="Stickman Dismount" class="text-light">
+                            <img src="/images/stickman-dismount.jpg" class="game-img rounded" alt="Stickman Dismount">
+                            <div class="game-name text-center mt-2">
+                                Stickman Dismount
+                            </div>
+                        </a>
+                    </div>                </div>
+                <h2 class="text-center my-2">Best Unblocked Games</h2>
+                <div class="d-flex flex-wrap align-self-start justify-content-center mt-4">
+                    <div class="game-list-item mb-2 text-center">
+                        <a href="/1v1-lol" title="1v1.LOL" class="text-light">
+                            <img src="/images/1v1-lol.jpg" class="game-img rounded" alt="1v1.LOL">
+                            <div class="game-name text-center mt-2">
+                                1v1.LOL
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/slope" title="Slope" class="text-light">
+                            <img src="/images/slope.jpg" class="game-img rounded" alt="Slope">
+                            <div class="game-name text-center mt-2">
+                                Slope
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/happy-wheels" title="Happy Wheels" class="text-light">
+                            <img src="/images/happy-wheels-html5.jpg" class="game-img rounded" alt="Happy Wheels">
+                            <div class="game-name text-center mt-2">
+                                Happy Wheels
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/basketball-stars" title="Basketball Stars" class="text-light">
+                            <img src="/images/basketball-stars.jpg" class="game-img rounded" alt="Basketball Stars">
+                            <div class="game-name text-center mt-2">
+                                Basketball Stars
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/madalin-stunt-cars-2" title="Madalin Stunt Cars 2" class="text-light">
+                            <img src="/images/madalin-stunt-cars-2.jpg" class="game-img rounded" alt="Madalin Stunt Cars 2">
+                            <div class="game-name text-center mt-2">
+                                Madalin Stunt Cars 2
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/five-nights-at-freddys" title="Five Nights at Freddy's" class="text-light">
+                            <img src="/images/five-nights-at-freddys.jpg" class="game-img rounded" alt="Five Nights at Freddy's">
+                            <div class="game-name text-center mt-2">
+                                Five Nights at Freddy's
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/among-us" title="Among Us" class="text-light">
+                            <img src="/images/among-us.jpg" class="game-img rounded" alt="Among Us">
+                            <div class="game-name text-center mt-2">
+                                Among Us
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/friday-night-funkin" title="Friday Night Funkin" class="text-light">
+                            <img src="/images/friday-night-funkin.jpg" class="game-img rounded" alt="Friday Night Funkin">
+                            <div class="game-name text-center mt-2">
+                                Friday Night Funkin
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/good-guys-vs-bad-boys" title="Good Guys vs Bad Boys" class="text-light">
+                            <img src="/images/good-guys-vs-bad-boys.jpg" class="game-img rounded" alt="Good Guys vs Bad Boys">
+                            <div class="game-name text-center mt-2">
+                                Good Guys vs Bad Boys
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/cookie-clicker" title="Cookie Clicker" class="text-light">
+                            <img src="/images/cookie-clicker.jpg" class="game-img rounded" alt="Cookie Clicker">
+                            <div class="game-name text-center mt-2">
+                                Cookie Clicker
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/fall-guys" title="Fall Guys" class="text-light">
+                            <img src="/images/fall-guys.jpg" class="game-img rounded" alt="Fall Guys">
+                            <div class="game-name text-center mt-2">
+                                Fall Guys
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/drift-hunters" title="Drift Hunters" class="text-light">
+                            <img src="/images/drift-hunters.jpg" class="game-img rounded" alt="Drift Hunters">
+                            <div class="game-name text-center mt-2">
+                                Drift Hunters
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/rocket-league" title="Rocket League" class="text-light">
+                            <img src="/images/rocket-league.jpg" class="game-img rounded" alt="Rocket League">
+                            <div class="game-name text-center mt-2">
+                                Rocket League
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/two-ball-3d" title="Two Ball 3D" class="text-light">
+                            <img src="/images/two-ball-3d.jpg" class="game-img rounded" alt="Two Ball 3D">
+                            <div class="game-name text-center mt-2">
+                                Two Ball 3D
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/retro-bowl" title="Retro Bowl" class="text-light">
+                            <img src="/images/retro-bowl.jpg" class="game-img rounded" alt="Retro Bowl">
+                            <div class="game-name text-center mt-2">
+                                Retro Bowl
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/idle-breakout" title="Idle Breakout" class="text-light">
+                            <img src="/images/idle-breakout.jpg" class="game-img rounded" alt="Idle Breakout">
+                            <div class="game-name text-center mt-2">
+                                Idle Breakout
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/madalin-cars-multiplayer" title="Madalin Cars Multiplayer" class="text-light">
+                            <img src="/images/madalin-cars-multiplayer.jpg" class="game-img rounded" alt="Madalin Cars Multiplayer">
+                            <div class="game-name text-center mt-2">
+                                Madalin Cars Multiplayer
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/hole-io" title="Hole IO" class="text-light">
+                            <img src="/images/hole-io.jpg" class="game-img rounded" alt="Hole IO">
+                            <div class="game-name text-center mt-2">
+                                Hole IO
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/bullet-party-2" title="Bullet Party 2" class="text-light">
+                            <img src="/images/bullet-party-2.jpg" class="game-img rounded" alt="Bullet Party 2">
+                            <div class="game-name text-center mt-2">
+                                Bullet Party 2
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/granny" title="Granny" class="text-light">
+                            <img src="/images/granny.jpg" class="game-img rounded" alt="Granny">
+                            <div class="game-name text-center mt-2">
+                                Granny
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/run-3" title="Run 3" class="text-light">
+                            <img src="/images/run-3.jpg" class="game-img rounded" alt="Run 3">
+                            <div class="game-name text-center mt-2">
+                                Run 3
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/basketball-legends" title="Basketball Legends" class="text-light">
+                            <img src="/images/basketball-legends.jpg" class="game-img rounded" alt="Basketball Legends">
+                            <div class="game-name text-center mt-2">
+                                Basketball Legends
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/vex-5" title="Vex 5" class="text-light">
+                            <img src="/images/vex-5.jpg" class="game-img rounded" alt="Vex 5">
+                            <div class="game-name text-center mt-2">
+                                Vex 5
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/death-run-3d" title="Death Run 3D" class="text-light">
+                            <img src="/images/death-run-3d.jpg" class="game-img rounded" alt="Death Run 3D">
+                            <div class="game-name text-center mt-2">
+                                Death Run 3D
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/good-guys-vs-bad-boys-2" title="Good Guys vs Bad Boys 2" class="text-light">
+                            <img src="/images/good-guys-vs-bad-boys-2.jpg" class="game-img rounded" alt="Good Guys vs Bad Boys 2">
+                            <div class="game-name text-center mt-2">
+                                Good Guys vs Bad Boys 2
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/getaway-shootout" title="Getaway Shootout" class="text-light">
+                            <img src="/images/getaway-shootout.jpg" class="game-img rounded" alt="Getaway Shootout">
+                            <div class="game-name text-center mt-2">
+                                Getaway Shootout
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/super-mario-bros" title="Super Mario Bros" class="text-light">
+                            <img src="/images/super-mario-bros.jpg" class="game-img rounded" alt="Super Mario Bros">
+                            <div class="game-name text-center mt-2">
+                                Super Mario Bros
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/cartoon-strike" title="Cartoon Strike" class="text-light">
+                            <img src="/images/cartoon-strike.jpg" class="game-img rounded" alt="Cartoon Strike">
+                            <div class="game-name text-center mt-2">
+                                Cartoon Strike
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/basketball-io" title="Basketball IO" class="text-light">
+                            <img src="/images/basketball-io.jpg" class="game-img rounded" alt="Basketball IO">
+                            <div class="game-name text-center mt-2">
+                                Basketball IO
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/just-fall-lol" title="Just Fall.LOL" class="text-light">
+                            <img src="/images/justfall-lol.jpg" class="game-img rounded" alt="Just Fall.LOL">
+                            <div class="game-name text-center mt-2">
+                                Just Fall.LOL
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/leader-strike" title="Leader Strike" class="text-light">
+                            <img src="/images/leader-strike.jpg" class="game-img rounded" alt="Leader Strike">
+                            <div class="game-name text-center mt-2">
+                                Leader Strike
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/4th-and-goal-2021" title="4th and Goal 2021" class="text-light">
+                            <img src="/images/4th-and-goal-2021.jpg" class="game-img rounded" alt="4th and Goal 2021">
+                            <div class="game-name text-center mt-2">
+                                4th and Goal 2021
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/get-on-top" title="Get on Top" class="text-light">
+                            <img src="/images/get-on-top.jpg" class="game-img rounded" alt="Get on Top">
+                            <div class="game-name text-center mt-2">
+                                Get on Top
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/rooftop-snipers" title="Rooftop Snipers" class="text-light">
+                            <img src="/images/rooftop-snipers.jpg" class="game-img rounded" alt="Rooftop Snipers">
+                            <div class="game-name text-center mt-2">
+                                Rooftop Snipers
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/moto-x3m" title="Moto X3M" class="text-light">
+                            <img src="/images/moto-x3m.jpg" class="game-img rounded" alt="Moto X3M">
+                            <div class="game-name text-center mt-2">
+                                Moto X3M
+                            </div>
+                        </a>
+                    </div><div class="game-list-item mb-2 text-center">
+                        <a href="/tunnel-rush" title="Tunnel Rush" class="text-light">
+                            <img src="/images/tunnel-rush.jpg" class="game-img rounded" alt="Tunnel Rush">
+                            <div class="game-name text-center mt-2">
+                                Tunnel Rush
+                            </div>
+                        </a>
+                    </div>                </div>
+                <hr>
+                <h3 class="text-center">What are unblocked games?</h3>
+                <p>How often do you get bored at school? Tired of lessons? Favorite sites with online games blocked? There is a solution! On our website you can play for free the most popular
+                    <a href="https://unblockeds-games.com" class="text-info">unblocked games</a> with your friends from US, UK, Australia and many other countries. These games are always available from anywhere, such as at school or at work.
+                    No additional applications or plugins need to be installed. Of the system requirements, we note only the presence of a PC or laptop with Chrome OS, Mac OS or Windows operating system. Everyone can choose a game from any genre: Action, Racing, Arcade, IO, Multiplayer, Logic, Defense and many others.</p>
+                <h3 class="text-center">What are some unblocked games at school?</h3>
+                <p>We always follow them and publish the most popular titles from these sites. Here is a list of the most popular unblocked games to play at school or at work:</p>
+                <ul>
+                    <li><a href="/slope">Slope</a></li>
+                    <li><a href="/1v1-lol">1v1.LOL</a></li>
+                    <li><a href="/just-fall-lol">Just Fall.LOL</a></li>
+                    <li><a href="/madalin-stunt-cars-2">Madalin Stunt Cars 2</a></li>
+                </ul>
+                <h3 class="text-center">What about Flash support at 2021?</h3>
+                <p>If you don't know yet, Google will disable Flash support in Chrome browsers in December 2020. In this regard, we decided to upload games only in the new HTML 5 format (JavaScript and WebGL). Unfortunately, many popular unblocked games are still written in Flash, but the developers are trying to transfer them to HTML 5, so titles like
+                    <a href="/run-3">Run 3</a> or <a href="/happy-wheels">Happy Wheels</a> will definitely be replaced with new versions and will continue to work on our site!</p>
+                <p>All games that we publish are thoroughly tested, so you can be sure that you will only get a positive experience. We also constantly check popular sites like Google Sites and Weebly for new and cool unblocked games.</p>
+                <p>If you want to publish a new game, write to us by email and we will consider your request. By the way, if you liked some kind of game, then do not forget to like it!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-center py-2">Unblocked Games &#169; 2022<br><a href="/privacy-policy">Privacy Policy</a> &#183; <a href="/about-us">About Us</a> &#183; <a href="/contact">Contact</a></div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7773QFW3W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E7773QFW3W');
+</script>            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
